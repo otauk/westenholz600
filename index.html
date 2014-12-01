@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>600 Jahre Westenholz</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<!-- ++++++ CSS ++++++ -->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.countdown.css" rel="stylesheet" type="text/css" />
+<!-- ++++++ SCRIPTS ++++++ -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.plugin.js"></script> 
+<script type="text/javascript" src="js/jquery.countdown.js"></script>
+<script type="text/javascript" src="js/jquery.countdown-de.js"></script>
+
+<script>
+$(function () {
+	var austDay = new Date();
+	austDay = new Date(austDay.getFullYear() + 1, 1 - 1, 00);
+	$('#defaultCountdown').countdown({until: austDay});
+	$('#year').text(austDay.getFullYear());
+});
+</script>
+
+<!-- Original --
+
+<!--
+<script type="text/javascript">
+	$(function () {
+	var austDay = new Date();
+	austDay = new Date(2015,1,1,12,00);
+	$('#defaultCountdown').countdown({until: austDay});
+	$('#year').text(austDay.getFullYear());
+});
+</script>
+-->
+</head>
+<body>
+<div id="header"></div>
+<div id="content">
+	<div class="logo">
+		<h1>600 Jahre <span>Westenholz</span></h1>
+	</div>	
+	<div class="band">
+	<div class="centered">
+		
+			<div class="centered_content">
+				<div class='lefttext'>Das Festjahr startet in</div>
+				<div id="defaultCountdown"></div>
+				 <div class='righttext'>mehr Informationen unter<br />
+		          	<a href="mailto:info@westenholz600.de?subject=Kontakt%20Countdownseite">
+		          		info@westenholz600.de
+		          	</a>
+		          </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
