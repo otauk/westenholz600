@@ -1,0 +1,689 @@
+/*
+*	##############################
+*	custom-base.css
+*	-	provides basic styles
+*	- useful for quick layouting / styling
+*	+++++
+*	version: 1.0
+*	+++++
+*
+*	Reassign Variables
+*	@alert-message-background: @brand-info;
+*	.alert {
+*		background-color: @alert-message-background;
+*	}
+*	##############################
+*/
+/*
+*	=============================================
+*	COLORS
+*	=============================================
+*/
+@color-base: 		rgb(255,255,255);
+@color-0: 			rgb(000,000,000);
+@primary: 			rgb(227,12,54);
+@secondary:			rgb(110,14,6);
+@dark: 				rgb(112,108,103);
+@medium:			rgb(188,180,171);
+
+@success: 			rgb(112,200,157);
+@light:				rgb(224,217,205);
+@info: 				rgb(247,235,202);
+@warning: 			rgb(232,183,50);
+@danger: 			rgb(218,54,68);
+@footer:			rgb(61,13,2);
+
+/*
+@primary-light:	lighten(@primary, 5%);
+@success-light:	lighten(@success, 5%);
+@info-light:			lighten(@info, 5%);
+@warning-light:	lighten(@warning, 5%);
+@danger-light:		lighten(@danger, 5%);
+@primary-dark:	darken(@primary, 5%);
+@success-dark:	darken(@success, 5%);
+@info-dark:			darken(@info, 5%);
+@warning-dark:	darken(@warning, 5%);
+@danger-dark:		darken(@danger, 5%);
+*/
+
+/*
+*	=============================================
+*	FONTS
+*	=============================================
+*/
+.font-base () {
+	font-family: 'Times New Roman', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	}
+.font-sans () {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	}
+.font-FA () {
+	font-family: 'FontAwesome';
+	font-weight: normal;
+	font-style: normal;
+	}
+@fs-base:			16px;
+@fs-large:         	ceil((@fs-base * 1.25)); // ~18px
+@fs-small:         	ceil((@fs-base * 0.85)); // ~12px
+@fs-h1:            	floor((@fs-base * 2.6)); // ~36px
+@fs-h2:            	floor((@fs-base * 2.15)); // ~30px
+@fs-h3:            	ceil((@fs-base * 1.7)); // ~24px
+@fs-h4:            	ceil((@fs-base * 1.25)); // ~18px
+@fs-h5:            	@fs-base;
+@fs-h6:            	ceil((@fs-base * 0.85)); // ~12px
+@line-height-base:        1.42857143;
+
+.hyphen () {
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+	}
+
+/*
+*	=============================================
+*	ICONS
+*	=============================================
+*/
+@icon-primary: 		"\f054";				// Haken
+@icon-success: 		"\f00c";				//
+@icon-info: 				"\f0eb";				//
+@icon-warning:		"\f071";
+@icon-danger:			"\f00d";
+@icon-list:				"\f105";				// spitze Klammer rechts
+/*
+*	=============================================
+*	LAYOUT STYLES
+*	=============================================
+*/
+@space-base: 		15px;
+@space-large: 		ceil((@space-base * 2.0));
+@em-base:			5em;
+@medium-em:		ceil((@em-base * 2.0));
+@large-em:			ceil((@em-base * 3.0));
+@xlarge-em:		ceil((@em-base * 4.0));
+@none-percent: 		0%;
+@small-percent:		25%;
+@onethird-percent: 33%;
+@medium-percent:	50%;
+@twothird-percent: 66%;
+@large-percent:		75%;
+@xlarge-percent:	100%;
+@index-0:			0;
+@index-1:			1000;
+@index-2:			2000;
+@index-3:			3000;
+@index-4:			4000;
+@index-5:			5000;
+@opacity-strong:	0.25;
+@opacity-medium:	0.5;
+@opacity-light:		0.75;
+@opacity-vlight:	0.9;
+@opacity-none:		1;
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+/*
+*	%%%%%%%%%%%%%%%%%%%%
+* 	padding
+*	%%%%%%%%%%%%%%%%%%%%
+*/
+.padding-0 {padding:0;}
+.padding-small {padding:@space-base;}
+.padding-big {padding:@space-large;}
+.padding-lr-0 {padding-left: 0;padding-right: 0;}
+.padding-lr-small {padding-left: @space-base;padding-right: @space-base;}
+.padding-lr-big {padding-left: @space-large;padding-right: @space-large;}
+.padding-tb-0 {padding-top: 0;padding-bottom: 0;}
+.padding-tb-small {padding-top: @space-base;padding-bottom: @space-base;}
+.padding-tb-big {padding-top: @space-large;padding-bottom: @space-large;}
+/*
+*	%%%%%%%%%%%%%%%%%%%%
+* 	margin
+*	%%%%%%%%%%%%%%%%%%%%
+*/
+.margin-0 {margin: 0;}
+.margin-small{margin: @space-base;}
+.margin-big{margin: @space-large;}
+/*
+*	%%%%%%%%%%%%%%%%%%%%
+* 	width
+*	%%%%%%%%%%%%%%%%%%%%
+*/
+.w25{width:@small-percent;}
+.w33{width:@onethird-percent;}
+.w50{width:@medium-percent;}
+.w66{width:@twothird-percent;}
+.w75{width:@large-percent;}
+.w100{width:@xlarge-percent;}
+/*
+*	%%%%%%%%%%%%%%%%%%%%
+* 	min-width
+*	%%%%%%%%%%%%%%%%%%%%
+*/
+.min-w25{min-width: @small-percent;}
+.min-w50{min-width: @medium-percent;}
+.min-w75{min-width: @large-percent;}
+.min-w100{min-width: @xlarge-percent;}
+/*
+*	%%%%%%%%%%%%%%%%%%%%
+* 	max-width
+*	%%%%%%%%%%%%%%%%%%%%
+*/
+.max-w980 {max-width:980px;}
+.max-w1170 {max-width:1170px;}
+/*
+*	%%%%%%%%%%%%%%%%%%%%
+* 	height
+*	%%%%%%%%%%%%%%%%%%%%
+*/
+/*
+*	%%%%%%%%%%%%%%%%%%%%
+* 	position
+*	%%%%%%%%%%%%%%%%%%%%
+*/
+.pos-left{float:left;}
+.pos-center{margin:0 auto;}
+.pos-right{float:right;}
+.pos-absolute{position: absolute;}
+.pos-relative{position: relative;}
+/*
+*	%%%%%%%%%%%%%%%%%%%%
+* 	z-index
+*	%%%%%%%%%%%%%%%%%%%%
+*/
+.z-0{z-index:@index-0;}
+.z-1{z-index:@index-1;}
+.z-2{z-index:@index-2;}
+.z-3{z-index:@index-3;}
+.z-4{z-index:@index-4;}
+.z-5{z-index:@index-5;}
+/*
+*	=============================================
+*	TEXT-STYLES
+*	=============================================
+*/
+/*
+*	%%%%%%%%%%%%%%%%%%%%
+* 	font-size
+*	%%%%%%%%%%%%%%%%%%%%
+*/
+.fs-base{font-size: @fs-base;}
+.fs-large{font-size: @fs-large;}
+.fs-small{font-size: @fs-small;}
+/*
+*	%%%%%%%%%%%%%%%%%%%%
+* 	line-height
+*	%%%%%%%%%%%%%%%%%%%%
+*/
+.lh-100 {line-height: 1em;}
+.lh-125 {line-height: 1.25em;}
+.lh-150 {line-height: 1.5em;}
+.lh-175 {line-height: 1.75em;}
+.lh-200 {line-height: 2em;}
+/*
+*	%%%%%%%%%%%%%%%%%%%%
+* 	letter-spacing
+*	%%%%%%%%%%%%%%%%%%%%
+*/
+.ls-1{letter-spacing:0.1em;}
+.ls-2{letter-spacing:0.2em;}
+.ls-3{letter-spacing:0.3em;}
+.ls-4{letter-spacing:0.4em;}
+.ls-5{letter-spacing:0.5em;}
+.ls-6{letter-spacing:0.5em;}
+.ls-7{letter-spacing:0.7em;}
+.ls-8{letter-spacing:0.8em;}
+.ls-9{letter-spacing:0.9em;}
+.ls-10{letter-spacing:1em;}
+/*
+*	=============================================
+*	SITE-SPECIFIC (auslagern)
+*	=============================================
+*/
+*{box-sizing: border-box;}
+.container {
+    width: 100%;
+    //		Set if needed by design -> max-width: 1200px;
+    // 	...then position it -> margin: 0 auto;
+	}
+/*-- our cleafix hack -- */
+.row:before,
+.row:after {
+    content:"";
+    display: table ;
+    clear:both;
+	}
+[class*='col-'] {
+    float: left;
+    min-height: 1px;
+    width: 16.66%;
+    /*-- our gutter -- */
+    padding: @space-base;
+    background-color: @info;
+	}
+.col-1{ width: 16.66%; }
+.col-2{ width: 33.33%; }
+.col-3{ width: 50%;    }
+.col-4{ width: 66.66%; }
+.col-5{ width: 83.33%; }
+.col-6{ width: 100%;   }
+@media all and (max-width:800px){
+    .col-1{ width: 33.33%;  }
+    .col-2{ width: 50%;     }
+    .col-3{ width: 100%;  }
+    .col-4{ width: 100%;    }
+    .col-5{ width: 100%;    }
+    .col-6{ width: 100%;    }
+    .row .col-2:last-of-type{
+        width: 100%;
+    }
+    .row .col-5 ~ .col-1{
+        width: 100%;
+    }
+}
+@media all and (max-width:650px){
+    .col-1{ width: 50%;     }
+    .col-2{ width: 100%;    }
+    .col-3{ width: 100%;    }
+    .col-4{ width: 100%;    }
+    .col-5{ width: 100%;    }
+    .col-6{ width: 100%;    }
+}
+// just for testing purposes
+.outline, .outline *{outline: 1px solid @primary;}
+/*-- some extra column content styling --*/
+[class*='col-'] > p {
+ background-color: @primary;
+ padding: 0;
+ margin: 0;
+ text-align: center;
+ color: white;
+}
+/*
+*	%%%%%%%%%%%%%%%%%%%%
+* 	body
+*	%%%%%%%%%%%%%%%%%%%%
+*/
+body {
+	.font-base;
+	.hyphen;
+	font-size: @fs-base;
+	background: @info;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+.header {
+	min-height: @medium-em;
+	background-color: @primary;
+	padding: none;
+}
+
+.footer {
+	min-height: @medium-em;
+	background-color: @footer;
+	padding: none;
+}
+
+.main {
+	padding-left: @space-base;
+	padding-right: @space-base;
+	line-height: @line-height-base;
+}
+/*
+*	%%%%%%%%%%%%%%%%%%%%
+* 	navigation
+*	%%%%%%%%%%%%%%%%%%%%
+*/
+
+// Standard
+@import "navi-dropdown.less";
+label[for="nav-trigger"] {display:none;}
+.mobile_nav{display: none;}
+@media all and (max-width:650px){
+.navi {display:none;}
+.mobile_nav{display: block;}
+.header {margin-top:60px;}
+
+label[for="nav-trigger"] {
+		display: block;
+	}
+}
+
+.navigation {
+  /* critical sizing and position styles */
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+
+  /* non-critical appearance styles */
+  list-style: none;
+  background: @info;
+  padding:0;
+  padding-top:45px;
+}
+
+/* Navigation Menu - List items */
+.nav-item {
+  /* non-critical appearance styles */
+  width:100%;
+  border-bottom: 1px solid @info;
+}
+
+.nav-item a {
+  /* non-critical appearance styles */
+  display: block;
+  padding: @space-base;
+  background: @info;
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  color: @color-base;
+  background:@primary;
+}
+
+.nav-item:before {
+	content: '';
+	padding:0;
+}
+
+/* Site Wrapper - Everything that isn't navigation */
+.site-wrap {
+  /* Critical position and size styles */
+  min-height: 100%;
+  min-width: 100%;
+  background-color: white; /* Needs a background or else the nav will show through */
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+}
+
+/* Nav Trigger */
+.nav-trigger {
+  /* critical styles - hide the checkbox input */
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+label[for="nav-trigger"] {
+  /* critical positioning styles */
+  position: fixed;
+  left: @space-base; top: @space-base;
+  z-index: 2;
+
+  /* non-critical apperance styles */
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+  background-size: contain;
+}
+
+/* Make the Magic Happen */
+.nav-trigger + label, .site-wrap {
+  transition: left 0.5s;
+}
+
+.nav-trigger:checked + label {
+  left: 215px;
+}
+
+.nav-trigger:checked ~ .site-wrap {
+  left: 200px;
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.5);
+}
+
+.mobile_nav {
+	width:100%;
+	height: 60px;
+	background: @warning;
+	position: fixed;
+	z-index:0;
+	top:0;
+}
+
+/*
+.bgdanger {background-color:@danger};
+.bgwarning {background-color:@warning};
+.bginfo {background-color:@info};
+.bgsuccess {background-color:@success};
+.bgprimary {background-color:@primary};
+*/
+/*
+*	%%%%%%%%%%%%%%%%%%%%
+* 	links
+*	%%%%%%%%%%%%%%%%%%%%
+*/
+a {
+	&:link, &:visited {
+		color:@primary;
+		text-decoration: none;
+	}
+	&:hover, &:active, &:focus {
+		background-color: @primary;
+		color: @color-base;
+	}
+}
+/*
+*	%%%%%%%%%%%%%%%%%%%%
+* 	headlines
+*	%%%%%%%%%%%%%%%%%%%%
+*/
+h1, h2, h3, h4, h5, h6 {
+	color:@primary;
+}
+h1 {
+	font-size: @fs-h1;
+	}
+h2 {
+	font-size:@fs-h2;
+	}
+	/*
+*	%%%%%%%%%%%%%%%%%%%%
+* 	lists
+*	%%%%%%%%%%%%%%%%%%%%
+*/
+ul {
+	padding: @space-base;
+	list-style-type: none;
+	& li:before {
+		.font-FA;
+		content: @icon-list;
+		padding-right: 5px;
+	}
+	& ul {
+		padding:0 @space-base;
+		margin-left:-5px;
+		& li:before {
+			.font-FA;
+			content:  @icon-list@icon-list;
+			padding-right: 5px;
+		}
+		& ul {
+			margin-left:3px;
+			& li:before {
+			.font-FA;
+			content:  @icon-list@icon-list@icon-list;
+			padding-right: 5px;
+			}
+		}
+	}
+}
+/*
+*	%%%%%%%%%%%%%%%%%%%%
+* 	forms
+*	%%%%%%%%%%%%%%%%%%%%
+*/
+input {
+	border:none;
+	font-size: @fs-base;
+	padding: @space-base;
+	background: @secondary;
+	color:@primary;
+	&:hover, &:active, &:focus {
+		box-shadow: 0px 0px 5px @primary;
+		outline: none;
+	}
+	// placeholder
+	&::-webkit-input-placeholder { /* WebKit browsers */
+    color:    @primary;
+	}
+	&:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    @primary;
+   opacity:  1;
+	}
+	&::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    @primary;
+   opacity:  1;
+	}
+	&:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    @primary;
+	}
+	&[type=button] {
+		&:hover {
+			background: lighten(@secondary,10%);
+			box-shadow: none;
+			cursor: pointer;
+		}
+
+	}
+}
+.btn {
+	display: block;
+	position: relative;
+	height:50px;
+	margin-right: -5px;
+	border:none;
+	color: @color-base;
+	.font-sans ();
+	text-transform: uppercase;
+	text-align:left;
+	cursor:pointer;
+	font-size: @fs-large;
+	&.label {
+		z-index: @index-2;
+		width: 175px;
+		padding:@space-base 5px;
+		background-color: @medium;
+		pointer-events: none;
+	}
+	&.bar {
+		z-index: @index-1;
+		width: 200px;
+		height:20px;
+		margin-top:-35px;
+		text-align: right;
+		background-color: @primary;
+		pointer-events: none;
+		&:after {
+			.font-FA ();
+			content: @icon-list@icon-list;
+			color:#fff;
+			padding-right:6px;
+			vertical-align: top;
+		}
+
+	}
+	&.active {
+		z-index: @index-0;
+		width: 200px;
+		padding:@space-base 5px;
+		text-align: right;
+		background-color: @light;
+		margin-top:-35px;
+		&:hover, &:active, &:focus {
+			text-decoration:none;
+			background-color: @primary;
+
+		}
+	}
+}
+	/*
+*	%%%%%%%%%%%%%%%%%%%%
+* 	alert
+*	%%%%%%%%%%%%%%%%%%%%
+*/
+.alert {
+    .border-radius(4px);
+    display: block;
+	padding:@space-base;
+	margin-top:@space-base;
+	margin-bottom:@space-base;
+    vertical-align: middle;
+    	&:before {
+			.font-FA;
+			padding-right: @space-base;
+		}
+		&.primary {
+			background-color: @primary;
+			&:before {
+				content: @icon-primary;
+	    			}
+	    	}
+		&.success {
+			background-color: @success;
+			&:before {
+				content: @icon-success;
+	    			}
+	    	}
+	    &.info {
+			background-color: @info;
+			&:before {
+				content: @icon-info;
+	    			}
+	    	}
+	    &.warning {
+			background-color: @warning;
+			&:before {
+				content: @icon-warning;
+	    			}
+	    	}
+	    &.danger {
+			background-color: @danger;
+			&:before {
+				content: @icon-danger;
+	    			}
+	    	}
+	}
+	/*
+*	%%%%%%%%%%%%%%%%%%%%
+* 	tables
+*	%%%%%%%%%%%%%%%%%%%%
+*/
+.tbl {
+	width: @xlarge-percent;
+	border-collapse: collapse;
+	margin: @space-base 0;
+	background: @info;
+	& th, th:hover {
+		background-color: @warning;
+		padding: @space-base;
+		color:@color-0;
+	}
+	& tr:nth-child(2n+1) {
+		background-color: @info;
+		}
+	& tr:hover {
+		background-color:@danger;
+		color: @color-base;
+		}
+	& td {
+		width:@onethird-percent;
+		text-align: center;
+		padding: @space-base;
+	}
+}
