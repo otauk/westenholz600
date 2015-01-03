@@ -12,6 +12,7 @@
 		<link href="css/custom-base.css" rel="stylesheet" type="text/css"/>
 		<!-- jQuery -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script src="js/scrollTop.js" type="text/javascript"></script>
 	</head>
 	<body>
 		<ul class="navigation">
@@ -23,8 +24,6 @@
 		</ul>
 		<input type="checkbox" id="nav-trigger" class="nav-trigger" />
 		<label for="nav-trigger"></label>
-
-
 		<div class="site-wrap">
 			<div class="mobile_nav"></div>
 			<div class="header"></div>
@@ -71,20 +70,28 @@
 		            </ul>
 				</nav>
         </div>
+			<div class="pic_nav">pic nav</div>
+			<div class="divider">Divider</div>
 			<div class="main">
-				<h1>Das Dorf</h1>
-				<p>
-					Some text in a paragraph
-				</p>
-				<div class="btn">
-					<div class="btn label">historie</div>
-					<div class="btn bar"></div>
-					<div class="btn active"></div>
+				<div class="main left">
+					<h1>Das Dorf</h1>
+					<p>
+						Some text in a paragraph
+						</p>
 				</div>
-				<h2>headline h2</h2>
-				<p>
-					Lorem ipsum dolor sit amet, <a href="#">consectetur adipisicing elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</p>
+				<div class="main right">
+					<div class="btn">
+						<div class="btn label">historie</div>
+						<div class="btn bar"></div>
+						<div class="btn active"></div>
+					</div>
+				</div>
+			</div>
+			<div class="divider">Divider</div>
+			<div class="buch">Buch</div>
+			<div class="sponsoren">Sponsoren</div>
+			<div class="divider">Divider</div>
+
 				<div class="container outline">
 				    <div class="row">
 				        <div class="col-1"><p>col-1</p></div>

@@ -1,11 +1,10 @@
 nav {
     width: auto;
-    // set border-top on ul li ul if you use this
-    border-bottom: 1px solid @info;
     & ul {
     padding: 0px;
     margin: 0px;
-    background-color: @info;
+    background-color: @color-base;
+    opacity: 0.8;
     	&:after {
 	    	clear: both;
 		    content: " ";
@@ -15,23 +14,31 @@ nav {
 		    visibility: hidden;
     	}
     }
+    & a {
+	    &:link, &:visited, &:focus {
+	    	text-decoration: none;
+		    display: block;
+		    color: #000;
+		    padding: @space-base @space-large;
+		    }
+		&:hover {
+			 background-color: none;
+		}
+    	}
     & li {
-	    background-color: @info;
-	     list-style: none;
-		 float:left;
+	    padding: @space-base 0;
+	    background-color: @color-base;
+	    list-style: none;
+		float:right;
+		border-bottom: 5px solid transparent;
     	&:before {
 	    	content: none !important;
     	}
     	&:hover {
+	    border-bottom: 5px solid @primary;
 	    	& ul {
 		    	visibility: visible;
 	    	}
-    	}
-    	& a {
-	    	text-decoration: none;
-		    display: block;
-		    color: #333;
-		    padding: @space-base @space-large;
     	}
     	& ul {
 	    	display: inline;
@@ -39,19 +46,23 @@ nav {
 		    position: absolute;
 		    padding:0px;
 		    margin-left:0px;
-		    // if nav has border-bottom, set this
-		    border-top: 1px solid @info;
+		    margin-top: 20px;
 		    & li {
 			    float: none;
+			    border: none;
+			    &:hover {
+				    border:none;
+			    }
+
 			    & a {
 				    // Want some Icons in front of the <li>?
 				    &:before {
-					  .font-FA ();
-					  content: @icon-list;
-					  padding-right: @space-base;
+					  //.font-FA ();
+					  //content: @icon-list;
+					  //padding-right: @space-base;
 					}
 					&:hover {
-				    	color:@color-base;
+				    	color:@primary;
 			    	}
 		    	}
     		}
