@@ -18,13 +18,13 @@ $(window).scroll(function() {
 				"width":"100%",
 				"margin": "0",
 				"left":"0%",
-				"transition" : "width 0.8s ease-in-out"
+				"transition" : "all 0.1s ease-in-out"
 			}
 		);
 		$(".navi li").css(
 			{
 				"padding":"0px",
-				"transition" : "padding 0.8s ease-in-out"
+				"transition" : "all 0.1s ease-in-out"
 			}
 		);
 		$(".navi li ul").css(
@@ -41,13 +41,13 @@ $(window).scroll(function() {
 				"width":"50%",
 				"margin": "0 0 0 -25%",
 				"left":"50%",
-				"transition" : "width 0.8s ease-in-out"
+				"transition" : "all 0.1s ease-in-out"
 			}
 		);
 		$(".navi li").css(
 			{
 				"padding":"15px 0px",
-				"transition" : "padding 0.8s ease-in-out",
+				"transition" : "all 0.1s ease-in-out",
 			}
 		);
 		$(".navi li ul li").css (
