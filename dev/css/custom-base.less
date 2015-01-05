@@ -95,6 +95,9 @@
 *	LAYOUT STYLES
 *	=============================================
 */
+
+@outer-container:	1200px;
+@inner-container:	968px;
 @space-base: 		15px;
 @space-large: 		ceil((@space-base * 2.0));
 @em-base:			5em;
@@ -254,10 +257,20 @@ body {
 	.font-base;
 	.hyphen;
 	font-size: @fs-base;
-	background: @info;
+	background: #999;
 	margin: 0;
 	overflow-x: hidden;
 	line-height: @line-height-base;
+}
+
+.wrapper {
+	width:@outer-container;
+	margin: 0 auto;
+}
+
+.content {
+	width:@inner-container;
+	margin:0 auto;
 }
 
 .header {
@@ -269,13 +282,10 @@ body {
 .picnav {
 	width:100%;
 	text-align: center;
-	margin-top:-160px;
+	margin-top:-175px;
 	visibility: hidden;
 }
 
-.picnav_content {
-	display: inline-block;
-}
 
 .divider_main {
 	margin-top:160px;
@@ -284,20 +294,8 @@ body {
 
 .main {
 	clear: both;
-	margin: 0 15%;
 	padding-bottom: @space-large;
-}
-
-.left {
-	width: 50%;
-	float: left;
-	margin-right: @space-base;
-}
-
-.right {
-	margin-left: @space-base;
-
-}
+}s
 
 .clear {
 	clear: both;
@@ -308,7 +306,7 @@ body {
 }
 
 .buch {
-	margin: 0 15%;
+
 }
 
 .sponsor {
@@ -320,10 +318,10 @@ body {
 }
 
 .footer {
-	min-height: @medium-em;
 	background-color: @footer;
 	color:@primary;
-	padding: none;
+	padding: @space-base 0;
+	line-height: ceil((@line-height-base * 1.25));
 }
 
 
@@ -338,20 +336,23 @@ body {
 .navi {
 	position: fixed;
 	top:0;
-	width:50%;
-	left: 50%;
-	margin: 0 0 0 -25%;
+	width:@inner-container;
 	z-index: @index-5;
 }
 
-@media all and (max-width:1200px){
-	.navi {
+.navi_container {
+	background-color: @color-base;
+	opacity: 0.8;
+	width:100%;
+	visibility: hidden;
 	position: fixed;
 	top:0;
-	width:100%;
-	left:0;
-	margin:0;
+	padding:20.5px;
+	z-index: @index-4;
 	}
+
+.navi_container:before {
+	content:"f";
 }
 
 // mobile
@@ -715,5 +716,8 @@ width: 150px;
 height: 125px;
 background-color: #65615c;
 
+}
 
+.footer_border {
+	border-right: 1px solid @primary;
 }
