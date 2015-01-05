@@ -33,11 +33,6 @@
 						<ul>
 							<li class = "cat5 shrink">
 			                    <a class="navitem" href="#">Kontakt</a>
-			                    <ul class="closer">
-			                        <li><a href="#">Deutschland</a></li>
-			                        <li><a href="#">Amerika</a></li>
-			                        <li><a href="#">Spanien</a></li>
-			                    </ul>
 			                </li>
 							<li class = "cat4 shrink">
 			                    <a class="navitem"  href="#">Media</a>
@@ -79,7 +74,7 @@
 						<div class="row">
 							<div class="col-1_4">
 								<div class="view view-first">
-									<img src="img/image.jpeg" />
+									<img src="img/thumbs_head.jpg" alt="thumbs_head">
 									<div class="mask">
 										<h2>Programm</h2>
 										<a href="#" class="info">Infos</a>
@@ -91,7 +86,7 @@
 							</div>
 							<div class="col-1_4">
 								<div class="view view-first">
-									<img src="img/image.jpeg" />
+									<img src="img/thumbs_head.jpg" alt="thumbs_head">
 									<div class="mask">
 										<h2>Programm</h2>
 										<a href="#" class="info">Infos</a>
@@ -103,7 +98,7 @@
 							</div>
 							<div class="col-1_4">
 								<div class="view view-first">
-								    <img src="img/image.jpeg" />
+								    <img src="img/thumbs_head.jpg" alt="thumbs_head">
 								    <div class="mask">
 								    	<h2>Programm</h2>
 										<a href="#" class="info">Infos</a>
@@ -115,7 +110,7 @@
 							</div>
 							<div class="col-1_4">
 								<div class="view view-first">
-								    <img src="img/image.jpeg" />
+								    <img src="img/thumbs_head.jpg" alt="thumbs_head">
 								    <div class="mask">
 								    	<h2>Programm</h2>
 										<a href="#" class="info">Infos</a>
@@ -128,7 +123,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="divider_main">Divider Main</div>
+			</div>
+			<div class="rinde"></div>
+			<div class="divider_main"></div>
+			<div class="content">
 				<div class="main">
 					<div class="container flyLeft1">
 						<div class="row">
@@ -144,8 +142,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="divider_buch">Divider Buch</div>
-				<div class="buch">
+			</div>
+			<div class="divider_buch"></div>
+			<div class="rinde2">
+			<div class="content">
+					<div class="buch">
 					<div class="container flyLeft2">
 						<div class="row">
 							<h1>Das Buch</h1>
@@ -155,64 +156,88 @@
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Some text in a paragraph
 							</div>
 							<div class="col-2_4">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Some text in a paragraph
+								<table class="tbl">
+									<th>
+										Pressearchiv
+									</th>
+									<tr>
+										<td>Lorem Ipsum 1</td>
+									</tr>
+									<tr>
+										<td>Lorem Ipsum 2</td>
+									</tr>
+									<tr>
+										<td>Lorem Ipsum 3</td>
+									</tr>
+								</table>
+
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="sponsoren">
-					<div class="btn">
-						<div class="btn label">historie</div>
-						<div class="btn bar"></div>
-						<div class="btn active"></div>
+					<div class="sponsoren">
+						<div class="container">
+							<div class="row">
+								<div class="col-4_4">
+									Sponsoren-Logos
+								</div>
+							</div>
+						</div>
+						<div class="btn">
+							<div class="btn label">historie</div>
+							<div class="btn bar"></div>
+							<div class="btn active"></div>
+						</div>
 					</div>
-			</div>
-				<div class="divider_footer">Divider Footer</div>
-				<div class="footer">
-					<div class="container flyBottom">
-					    <div class="row">
-					        <div class="col-1_4 footer_border">
-						        <h3>Allgemein</h3>
-						        Das Dorf<br/>
-								Das Festjahr<br/>
-								Das Buch<br/>
-								Arbeitsgruppen<br/>
-								Presse<br/>
-								Downloads<br/>
-								Anfahrt<br/>
-								Impressum<br/>
-						    </div>
-					        <div class="col-1_4 footer_border">
-						        <h3>Festjahr</h3>
-						        Gewerbetag<br/>
-								Festwochenende Freitag<br/>
-								Festwochenende Samstag<br/>
-								Festwochenende Sonntag<br/>
-								Busfahrpläne<br/>
-								Kirchenjubiläum<br/>
-								Deutscher Wandertag<br/>
-								Hinweistafeln<br/>
-						    </div>
-					        <div class="col-1_4 footer_border">
-						    	<h3>Suche</h3>
-						    	<form>
-							        <span>
-										<input type="text" class="search" name="search"/>
-										<input type="button" class="search-icon"  value=""/>
-							        </span>
-						    	</form>
-					        </div>
-					        <div class="col-1_4">
-						        <h3>Kontakt</h3>
-									<input type="text" name="name" placeholder="Name" />
-									<input type="text" name="mail" placeholder="E-Mail" />
-									<textarea  type="text" name="comment" rows="5"  placeholder="Kommentar"></textarea>
-									<input type="button" value="senden" />
-					        </div>
-					        <div class="col-1"></div>
-					    </div>
 				</div>
-			</div>
+			<div class="divider_footer"></div>
+			<div class="footer_bg">
+				<div class="content">
+					<div class="footer">
+						<div class="container flyBottom">
+						    <div class="row">
+						        <div class="col-1_4 footer_border">
+							        <h3>Allgemein</h3>
+							        Das Dorf<br/>
+									Das Festjahr<br/>
+									Das Buch<br/>
+									Arbeitsgruppen<br/>
+									Presse<br/>
+									Downloads<br/>
+									Anfahrt<br/>
+									Impressum<br/>
+							    </div>
+						        <div class="col-1_4 footer_border">
+							        <h3>Festjahr</h3>
+							        Gewerbetag<br/>
+									Festwochenende Freitag<br/>
+									Festwochenende Samstag<br/>
+									Festwochenende Sonntag<br/>
+									Busfahrpläne<br/>
+									Kirchenjubiläum<br/>
+									Deutscher Wandertag<br/>
+									Hinweistafeln<br/>
+							    </div>
+						        <div class="col-1_4 footer_border">
+							    	<h3>Suche</h3>
+							    	<form>
+								        <span>
+											<input type="text" class="search" name="search"/>
+											<input type="button" class="search-icon"  value=""/>
+								        </span>
+							    	</form>
+						        </div>
+						        <div class="col-1_4">
+							        <h3>Kontakt</h3>
+										<input type="text" name="name" placeholder="Name" />
+										<input type="text" name="mail" placeholder="E-Mail" />
+										<textarea  type="text" name="comment" rows="5"  placeholder="Kommentar"></textarea>
+										<input type="button" value="senden" />
+						        </div>
+						    </div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</body>
