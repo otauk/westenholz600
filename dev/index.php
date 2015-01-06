@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 		<!-- Font -->
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
 		<!-- Stylesheet -->
 		<link href="css/custom-base.css" rel="stylesheet" type="text/css"/>
 		<!-- jQuery -->
@@ -28,11 +28,12 @@
 		<div class="wrapper">
 			<div class="header"></div>
 			<div class="content">
+				<div class="logo"></div>
 				<div class="container">
 					<div class="row">
 				<div class="navi">
 					<nav>
-						<ul>
+						<ul class="clean">
 							<li class = "cat5 shrink">
 			                    <a class="navitem" href="#">Kontakt</a>
 			                </li>
@@ -302,14 +303,31 @@ Arbeits- und Ausbildungsplätze vor Ort.
 
 <script>
 	$(document).ready(function($) {
-		// Navigation
-
-		var navi_container = TweenMax.fromTo($(".navi_container"), 0.2,
+		// Logo
+		var logo = TweenMax.fromTo($(".logo"), 0.2,
 								{
-									autoAlpha:0
+									backgroundImage: "url('img/w600_logo.png')"
+
 								},
 								{
-									autoAlpha:0.8
+									scale: 0.2,
+									top: "-122px",
+									ease:Power2.easeOut
+								}
+								);
+		var scene = new ScrollScene({offset:5})
+		.setTween(logo)
+		.addTo(controller);
+
+		// Navigation
+		var navi_container = TweenMax.fromTo($(".navi_container"), 0.2,
+								{
+									autoAlpha:0,
+									ease:Sine.easeOut
+								},
+								{
+									autoAlpha:0.8,
+									ease:Sine.easeOut
 								}
 								);
 		var scene = new ScrollScene({offset:5})
@@ -328,7 +346,7 @@ Arbeits- und Ausbildungsplätze vor Ort.
 		.addTo(controller);
 
 		// Navigation ul
-		var animNaviColor = TweenMax.to($("nav ul"), 0.2,
+		var animNaviColor = TweenMax.to($(".clean"), 0.2,
 								{
 									backgroundColor:"none"
 								});

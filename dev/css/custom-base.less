@@ -35,7 +35,7 @@
 	font-style: normal;
 	}
 .font-sans () {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	}
@@ -271,6 +271,14 @@ body {
 	padding: none;
 }
 
+.logo {
+	width: 595px;
+	height: 305px;
+	z-index: @index-5;
+	position: fixed;
+	top:100px;
+}
+
 .picnav {
 	width:100%;
 	text-align: center;
@@ -365,8 +373,8 @@ body {
 	visibility: hidden;
 	position: fixed;
 	top:0;
-	padding:@space-large;
-	z-index: @index-4;
+	padding:33px;
+	z-index: @index-1;
 	}
 
 // mobile
@@ -753,7 +761,7 @@ text-transform: uppercase;
 			transition:background 0.5s ease;
 			content: @icon-list;
 			background: linear-gradient(to left, @color-c4 50%, @color-c1 50%);
-			background-size: 200% 100%;
+			background-size: 201% 100%;
 			background-position:right bottom;
 			padding: 0 5px;
 		}
