@@ -8,20 +8,12 @@
 *
 *	##############################
 */
+
 /*
 *	=============================================
 *	COLORS
 *	=============================================
 */
-/*
-	@color-base: 		rgb(255,255,255);
-@color-0: 			rgb(000,000,000);
-@primary: 			rgb(227,12,54);
-@secondary:			rgb(110,14,6);
-@dark: 				rgb(101,97,92);
-@medium:			rgb(188,180,171);
-*/
-
 @color-base: 		rgb(255,255,255);	// weiß
 @color-0: 			rgb(000,000,000);	// schwarz
 @color-c1: 			#706c67;					// dunkelgrau
@@ -53,15 +45,23 @@
 	font-style: normal;
 	}
 @fs-base:			17px;
-@fs-large:         	ceil((@fs-base * 1.25)); // ~18px
-@fs-small:         	ceil((@fs-base * 0.85)); // ~12px
-@fs-h1:            	floor((@fs-base * 2.6)); // ~36px
-@fs-h2:            	floor((@fs-base * 2.15)); // ~30px
-@fs-h3:            	ceil((@fs-base * 1.7)); // ~24px
-@fs-h4:            	ceil((@fs-base * 1.25)); // ~18px
+@fs-large:         	ceil((@fs-base * 1.25)); //
+@fs-small:         	ceil((@fs-base * 0.85)); //
+@fs-h1:            	floor((@fs-base * 2.6)); //
+@fs-h2:            	floor((@fs-base * 2.15)); //
+@fs-h3:            	ceil((@fs-base * 1.7)); //
+@fs-h4:            	ceil((@fs-base * 1.25)); //
 @fs-h5:            	@fs-base;
-@fs-h6:            	ceil((@fs-base * 0.85)); // ~12px
-@line-height-base:        1.42857143;
+@fs-h6:            	ceil((@fs-base * 0.85)); //
+@fs-button:			29px;
+@fs-picnav-date:	43px;
+@fs-picnav-day:		24px;
+@fs-picnav-event:	23px;
+@fs-picnav-link:	20px;
+@fs-footer-h2:		26px;
+@fs-footer-text:	16px;
+//@line-height-base:        1.42857143;
+@line-height-base:	ceil((@fs-base * 1.75));
 
 .hyphen () {
 	-webkit-hyphens: auto;
@@ -245,7 +245,7 @@
 *	%%%%%%%%%%%%%%%%%%%%
 */
 body {
-	.font-base;
+	.font-sans ();
 	.hyphen;
 	font-size: @fs-base;
 	color: @color-c2;
@@ -334,9 +334,9 @@ body {
 .footer {
 	height:400px;
 	background-color: @color-c6;
+	font-size: @fs-footer-text;
 	color:@color-c4;
 	padding: @space-base 0;
-	line-height: ceil((@line-height-base * 1.25));
 }
 
 .clear {clear: both;}
@@ -355,6 +355,7 @@ body {
 	top:0;
 	width:@inner-container;
 	z-index: @index-5;
+	.font-base ();
 }
 
 .navi_container {
@@ -405,6 +406,7 @@ a {
 *	%%%%%%%%%%%%%%%%%%%%
 */
 h1, h2, h3, h4, h5, h6 {
+	.font-base ();
 	color:@color-c4;
 }
 h1 {
@@ -413,6 +415,10 @@ h1 {
 h2 {
 	font-size:@fs-h2;
 	}
+
+.footer h2 {
+	font-size: @fs-footer-h2;
+}
 	/*
 *	%%%%%%%%%%%%%%%%%%%%
 * 	lists
@@ -487,51 +493,57 @@ input, textarea {
 	}
 }
 .btn {
-	display: block;
+	display: inline-block;
 	position: relative;
-	height:50px;
-	margin-right: -5px;
+	width:270px;
 	border:none;
 	color: @color-base;
 	.font-sans ();
 	text-transform: uppercase;
 	text-align:left;
 	cursor:pointer;
-	font-size: @fs-large;
+	font-size: @fs-button;
 	&.label {
+		display: block;
 		z-index: @index-2;
-		width: 175px;
+		width: 240px;
 		padding:@space-base 5px;
 		background-color: @color-c2;
 		pointer-events: none;
 	}
 	&.bar {
+		display: block;
 		z-index: @index-1;
-		width: 200px;
-		height:20px;
-		margin-top:-35px;
+		width: 270px;
+		margin-top:-45px;
 		text-align: right;
 		background-color: @color-c4;
 		pointer-events: none;
 		&:after {
 			.font-FA ();
+			font-size: @fs-large;
 			content: @icon-list;
 			color:#fff;
-			padding-right:6px;
+			padding-right:8px;
 			vertical-align: top;
 		}
 
 	}
 	&.active {
+		display: block;
 		z-index: @index-0;
-		width: 200px;
+		width: 270px;
+		height: 60px;
 		padding:@space-base 5px;
 		text-align: right;
-		background-color: @color-c4;
-		margin-top:-35px;
+		background: linear-gradient(to left, @color-c3 50%, @color-c4 50%);
+		background-size: 200% 100%;
+		background-position:right bottom;
+		transition: all 0.5s ease;
+		margin-top:-45px;
 		&:hover, &:active, &:focus {
 			text-decoration:none;
-			background-color: @color-c4;
+			background-position:left bottom;
 		}
 	}
 }
@@ -561,7 +573,7 @@ input, textarea {
 	}
 	& tr {
 		cursor: pointer;
-		transition:all 0.5s ease;
+		transition:all 1s ease;
 		background: linear-gradient(to left, @color-c3 50%, @color-c4 50%);
 		background-size: 200% 100%;
 		background-position:right bottom;
@@ -617,18 +629,19 @@ input, textarea {
     position: absolute;
     overflow: hidden;
     top: 0;
-    left: 0
+    left: 0;
 }
 .view img {
     display: block;
     position: relative
 }
 .view h2 {
+	.font-sans ();
+	font-size: @fs-picnav-day;
     text-transform: uppercase;
     color: @color-c2;
     text-align: left;
     position: relative;
-    font-size: 17px;
     padding: 15px;
     background: #fff;
     margin: 60px 0 0 0
@@ -707,22 +720,52 @@ margin-top:260px;
 width: 270px;
 height: 180px;
 background-color: @color-c1;
+text-align: left;
+padding: @space-base;
+text-transform: uppercase;
 }
 
-.picnav_btm_date {
+.picnav_date {
+	font-size: @fs-picnav-date;
+	color: @color-base;
+}
+
+.picnav_day {
+	font-size: @fs-picnav-day;
+	color: @color-c2;
+	padding-bottom: 40px;
 
 }
 
-.picnav_btm_day {
-
+.picnav_event {
+	font-size: @fs-picnav-event;
+	color: @color-c3;
 }
 
-.picnav_btm_event {
-
-}
-
-.picnav_btm_link {
-
+.picnav_link {
+	font-size: @fs-picnav-link;
+	text-transform: lowercase;
+	& a {
+		transition:all 1s ease;
+		color: 	@color-c3;
+		&:before {
+			.font-FA ();
+			transition:background 0.5s ease;
+			content: @icon-list;
+			background: linear-gradient(to left, @color-c4 50%, @color-c1 50%);
+			background-size: 200% 100%;
+			background-position:right bottom;
+			padding: 0 5px;
+		}
+		&:hover {
+			color:@color-c4;
+			text-decoration: none;
+			&:before {
+				background-position:left bottom;
+				color:@color-base;
+			}
+		}
+	}
 }
 
 .footer_border {
