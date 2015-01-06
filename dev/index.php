@@ -15,13 +15,7 @@
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenMax.min.js">
 		<script type="text/javascript" src="js/scrollTop.js" ></script>
 		<script type="text/javascript" src="js/jquery.scrollmagic.min.js"></script>
-		<script>
-			var controller;
-			$(document).ready(function($) {
-				// init controller
-				controller = new ScrollMagic();
-			});
-		</script>
+		<script type="text/javascript" src="js/animation.js"></script>
 	</head>
 	<body>
 		<div class="navi_container"></div>
@@ -37,27 +31,36 @@
 							<li class = "cat5 shrink">
 			                    <a class="navitem" href="#">Kontakt</a>
 			                </li>
-							<li class = "cat4 shrink">
+							<li class = "cat4 shrink navi_border">
 			                    <a class="navitem"  href="#">Media</a>
 			                    <ul class="closer">
 			                        <li><a href="#">Webseiten</a></li>
-			                        <li><a href="#">Themes & Templates</a></li>
+			                        <li><a href="#">Themes</a></li>
 			                        <li><a href="#">Plugins</a></li>
 			                    </ul>
 			                </li>
-							<li class = "cat3 shrink">
+							<li class = "cat3 shrink navi_border">
 			                     <a class="navitem"  href="#">Das Buch</a>
 			                     <ul class="closer">
 			                         <li><a href="#">Webdesign</a></li>
 			                         <li><a href="#">Programmierung</a></li>
 			                         <li><a href="#">Online Marketing</a></li>
-			                         <li><a href="#">Suchmaschinenoptimierung</a></li>
+			                         <li><a href="#">Optimierung</a></li>
 			                     </ul>
 			                </li>
-							<li class = "cat2 shrink">
+							<li class = "cat2 shrink navi_border">
 			                    <a class="navitem" href="#">Das Festjahr</a>
 			                    <ul class="closer">
-			                        <li><a href="#">Festwochenende</a></li>
+			                        <li>
+			                        	<a href="#">Festwochenende</a>
+			                        	<ul>
+				                        	<li>Freitag</li>
+				                        	<li>Samstag</li>
+				                        	<li>Sonntag</li>
+				                        	<li>Lageplan</li>
+				                        	<li>Busfahrplan</li>
+			                        	</ul>
+			                        </li>
 			                        <li><a href="#">Gewerbetag</a></li>
 			                        <li><a href="#">Kirchenjubiläum</a></li>
 			                        <li><a href="#">Veranstaltungen</a></li>
@@ -66,7 +69,7 @@
 			                    </ul>
 			                </li>
 
-			                <li class = "cat1 shrink">
+			                <li class = "cat1 shrink navi_border">
 			                    <a class="navitem" href="#">Das Dorf</a>
 			                </li>
 			            </ul>
@@ -219,13 +222,25 @@ Arbeits- und Ausbildungsplätze vor Ort.
 										Pressearchiv
 									</th>
 									<tr>
-										<td>Lorem Ipsum 1</td>
+										<td>
+											<a href="#">
+												Lorem Ipsum 1
+											</a>
+										</td>
 									</tr>
 									<tr>
-										<td>Lorem Ipsum 2</td>
+										<td>
+											<a href="#">
+												Lorem Ipsum 2
+											</a>
+										</td>
 									</tr>
 									<tr>
-										<td>Lorem Ipsum 3</td>
+										<td>
+											<a href="#">
+												Lorem Ipsum 3
+											</a>
+										</td>
 									</tr>
 								</table>
 
@@ -300,139 +315,3 @@ Arbeits- und Ausbildungsplätze vor Ort.
 		</div>
 	</body>
 </html>
-
-<script>
-	$(document).ready(function($) {
-		// Logo
-		var logo = TweenMax.fromTo($(".logo"), 0.2,
-								{
-									backgroundImage: "url('img/w600_logo.png')"
-
-								},
-								{
-									scale: 0.2,
-									top: "-122px",
-									ease:Power2.easeOut
-								}
-								);
-		var scene = new ScrollScene({offset:5})
-		.setTween(logo)
-		.addTo(controller);
-
-		// Navigation
-		var navi_container = TweenMax.fromTo($(".navi_container"), 0.2,
-								{
-									autoAlpha:0,
-									ease:Sine.easeOut
-								},
-								{
-									autoAlpha:0.8,
-									ease:Sine.easeOut
-								}
-								);
-		var scene = new ScrollScene({offset:5})
-		.setTween(navi_container)
-		.addTo(controller);
-
-
-		// Navigation Li
-		var animNaviLi = TweenMax.to($(".shrink"), 0.2,
-								{
-									padding: "0px",
-									backgroundColor:"none"
-								});
-		var scene = new ScrollScene({offset: 5})
-		.setTween(animNaviLi)
-		.addTo(controller);
-
-		// Navigation ul
-		var animNaviColor = TweenMax.to($(".clean"), 0.2,
-								{
-									backgroundColor:"none"
-								});
-		var scene = new ScrollScene({offset: 5})
-		.setTween(animNaviColor)
-		.addTo(controller);
-
-		// Navigation li ul ul
-		var animNaviUl = TweenMax.to($(".closer"), 0.2,
-								{
-									marginTop: "5px"
-								});
-		var scene = new ScrollScene({offset: 5})
-		.setTween(animNaviUl)
-		.addTo(controller);
-
-		// Picnav (einmalig)
-		var animPicnav = TweenMax.fromTo("#animate2", 1,
-									{
-										autoAlpha:0,
-										marginLeft: "-1000px",
-										ease:Sine.easeOut
-									},
-									{
-										autoAlpha:1,
-										marginLeft: "0",
-										ease:Sine.easeOut
-									}
-									);
-		var scene = new ScrollScene({offset:25})
-		.setTween(animPicnav)
-		.addTo(controller);
-		scene.reverse(0, false);
-
-		// flyLeft (einmalig)
-		var flyLeft1 = TweenMax.fromTo(".flyLeft1", 1,
-									{
-										autoAlpha:0,
-										marginLeft: "-200px",
-										ease:Sine.easeOut
-									},
-									{
-										autoAlpha:1,
-										marginLeft: "0",
-										ease:Sine.easeOut
-									}
-									);
-		var scene = new ScrollScene({offset:100})
-		.setTween(flyLeft1)
-		.addTo(controller);
-		scene.reverse(0, false);
-
-			// flyLeft (einmalig)
-		var flyLeft2 = TweenMax.fromTo(".flyLeft2", 1,
-									{
-										autoAlpha:0,
-										marginLeft: "-200px",
-										ease:Sine.easeOut
-									},
-									{
-										autoAlpha:1,
-										marginLeft: "0",
-										ease:Sine.easeOut
-									}
-									);
-		var scene = new ScrollScene({offset:300})
-		.setTween(flyLeft2)
-		.addTo(controller);
-		scene.reverse(0, false);
-
-		// flyBottom (einmalig)
-		var flyBottom = TweenMax.fromTo(".flyBottom", 1,
-									{
-										autoAlpha:0,
-										ease:Sine.easeOut
-									},
-									{
-										autoAlpha:1,
-										ease:Sine.easeOut
-									}
-									);
-		var scene = new ScrollScene({offset:300})
-		.setTween(flyBottom)
-		.addTo(controller);
-		scene.reverse(0, false);
-
-	});
-</script>
-
