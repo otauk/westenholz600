@@ -1,22 +1,14 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>w600 - Development</title>
-		<meta charset="utf-8">
-		<meta http-equiv="expires" content="0">
-		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
-		<!-- Font -->
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
-		<!-- Stylesheet -->
-		<link href="css/custom-base.css" rel="stylesheet" type="text/css"/>
-		<!-- jQuery -->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenMax.min.js">
-		<script type="text/javascript" src="js/scrollTop.js" ></script>
-		<script type="text/javascript" src="js/jquery.scrollmagic.min.js"></script>
-		<script type="text/javascript" src="js/animation.js"></script>
-	</head>
+<?php include("header.php");?>
+<?php
+	// Variablen einsammeln
+	$name = $_POST["name"];
+	$mail = $_POST["mail"];
+	$comment = $_POST["comment"];
+	if (empty($name)) {$fehler = 1;}
+	else if (empty($mail)) {$fehler = 2;}
+	else if (empty($comment)) {$fehler = 3;}
+	else $fehler  = 0;
+?>
 	<body>
 		<div class="navi_container"></div>
 		<div class="wrapper">
@@ -25,56 +17,32 @@
 				<div class="logo"></div>
 				<div class="container">
 					<div class="row">
-				<div class="navi">
-					<nav>
-						<ul class="clean">
-							<li class = "cat5 shrink">
-			                    <a class="navitem" href="#">Kontakt</a>
-			                </li>
-							<li class = "cat4 shrink navi_border">
-			                    <a class="navitem"  href="#">Media</a>
-			                    <ul class="closer">
-			                        <li><a href="#">Webseiten</a></li>
-			                        <li><a href="#">Themes</a></li>
-			                        <li><a href="#">Plugins</a></li>
-			                    </ul>
-			                </li>
-							<li class = "cat3 shrink navi_border">
-			                     <a class="navitem"  href="#">Das Buch</a>
-			                     <ul class="closer">
-			                         <li><a href="#">Webdesign</a></li>
-			                         <li><a href="#">Programmierung</a></li>
-			                         <li><a href="#">Online Marketing</a></li>
-			                         <li><a href="#">Optimierung</a></li>
-			                     </ul>
-			                </li>
-							<li class = "cat2 shrink navi_border">
-			                    <a class="navitem" href="#">Das Festjahr</a>
-			                    <ul class="closer">
-			                        <li>
-			                        	<a href="#">Festwochenende</a>
-			                        	<ul>
-				                        	<li>Freitag</li>
-				                        	<li>Samstag</li>
-				                        	<li>Sonntag</li>
-				                        	<li>Lageplan</li>
-				                        	<li>Busfahrplan</li>
-			                        	</ul>
-			                        </li>
-			                        <li><a href="#">Gewerbetag</a></li>
-			                        <li><a href="#">Kirchenjubiläum</a></li>
-			                        <li><a href="#">Veranstaltungen</a></li>
-			                        <li><a href="#">Projekte</a></li>
-			                        <li><a href="#">Arbeitsgruppen</a></li>
-			                    </ul>
-			                </li>
-
-			                <li class = "cat1 shrink navi_border">
-			                    <a class="navitem" href="#">Das Dorf</a>
-			                </li>
-			            </ul>
-					</nav>
-				</div>
+						<div class="navi">
+							<ul class="nav clean">
+								<li><a href="#">Kontakt</a></li>
+								<li class="navi_border"><a href="#">Media</a></li>
+								<li class="navi_border"><a href="#">Das Buch</a></li>
+								<li class="dropdown navi_border"> <a href="#">Festjahr</a>
+									<ul>
+										<li class="dropdown"> <a href="#">Festwochenende</a>
+											<ul>
+												<li><a href="#">Freitag</a></li>
+												<li><a href="#">Samstag</a></li>
+												<li><a href="#">Sonntag</a></li>
+												<li><a href="#">Lageplan</a></li>
+												<li><a href="#">Busfahrplan</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Gewerbetag</a></li>
+										<li><a href="#">Kirchenjubiläum</a></li>
+				                        <li><a href="#">Veranstaltungen</a></li>
+				                        <li><a href="#">Projekte</a></li>
+				                        <li><a href="#">Arbeitsgruppen</a></li>
+									</ul>
+								</li>
+								<li class="navi_border"><a href="#">Das Dorf</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 				<div class="picnav" id="animate2">
@@ -293,19 +261,25 @@ Arbeits- und Ausbildungsplätze vor Ort.
 							    </div>
 						        <div class="col-1_4 footer_border">
 							    	<h2>Suche</h2>
-							    	<form>
-								        <span>
-											<input type="text" class="search" name="search"/>
-											<input type="button" class="search-icon"  value=""/>
-								        </span>
-							    	</form>
+							    	<form action="suche.php">
+										<input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+									</form>
 						        </div>
 						        <div class="col-1_4">
 							        <h2>Kontakt</h2>
-										<input type="text" name="name" placeholder="Name" />
-										<input type="text" name="mail" placeholder="E-Mail" />
-										<textarea  type="text" name="comment" rows="5"  placeholder="Kommentar"></textarea>
-										<input type="button" value="senden" />
+							        	<form method="POST" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" name="contact">
+											<input type="text" name="name" placeholder="Name" />
+											<input type="text" name="mail" placeholder="E-Mail" />
+											<textarea  type="text" name="comment" rows="5"  placeholder="Kommentar"></textarea>
+											<input type="submit" value="senden" />
+							        	</form>
+							        	<?php
+								        	if ($fehler == 0){
+									        	echo "
+									        	Vielen Dank für Ihre Mitteilung. <br/>Sie erhalten eine Kopie an '$mail'.
+									        	";
+								        	}
+								        	?>
 						        </div>
 						    </div>
 						</div>
@@ -315,3 +289,11 @@ Arbeits- und Ausbildungsplätze vor Ort.
 		</div>
 	</body>
 </html>
+
+<script>
+$(document).ready(function() {
+     $('#tipue_search_input').tipuesearch({
+          'mode': 'live'
+     });
+});
+</script>

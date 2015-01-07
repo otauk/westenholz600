@@ -72,13 +72,19 @@ controller = new ScrollMagic();
 		.addTo(controller);
 
 		// Navigation li ul ul
-		var animNaviUl = TweenMax.to($(".closer"), 0.2,
+		var animNaviUl = TweenMax.fromTo($(".nav>li>a"), 0.2,
 								{
-									marginTop: "5px"
-								});
+									padding: "40px"
+								},
+								{
+									padding:"15px 40px"
+								}
+
+								);
 		var scene = new ScrollScene({offset: 5})
 		.setTween(animNaviUl)
 		.addTo(controller);
+
 
 		// Picnav (einmalig)
 		var animPicnav = TweenMax.fromTo("#animate2", 1,
