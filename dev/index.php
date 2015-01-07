@@ -12,45 +12,16 @@
 	<body>
 		<div class="navi_container"></div>
 		<div class="wrapper">
-			<div class="header"></div>
+			<div class="header index"></div>
 			<div class="content">
 				<div class="logo"></div>
-				<div class="container">
-					<div class="row">
-						<div class="navi">
-							<ul class="nav clean">
-								<li><a href="#">Kontakt</a></li>
-								<li class="navi_border"><a href="#">Media</a></li>
-								<li class="navi_border"><a href="#">Das Buch</a></li>
-								<li class="dropdown navi_border"> <a href="#">Festjahr</a>
-									<ul>
-										<li class="dropdown"> <a href="#">Festwochenende</a>
-											<ul>
-												<li><a href="#">Freitag</a></li>
-												<li><a href="#">Samstag</a></li>
-												<li><a href="#">Sonntag</a></li>
-												<li><a href="#">Lageplan</a></li>
-												<li><a href="#">Busfahrplan</a></li>
-											</ul>
-										</li>
-										<li><a href="#">Gewerbetag</a></li>
-										<li><a href="#">Kirchenjubiläum</a></li>
-				                        <li><a href="#">Veranstaltungen</a></li>
-				                        <li><a href="#">Projekte</a></li>
-				                        <li><a href="#">Arbeitsgruppen</a></li>
-									</ul>
-								</li>
-								<li class="navi_border"><a href="#">Das Dorf</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
+				<?php include("navi-dropdown.php");?>
 				<div class="picnav" id="animate2">
 					<div class="container">
 						<div class="row">
 							<div class="col-1_4">
 								<div class="view view-first">
-									<img src="img/thumbs_head.jpg" alt="thumbs_head">
+									<img src="img/festwochenende_freitag.jpg" alt="thumbs_head">
 									<div class="mask">
 										<h2>Programm</h2>
 										<a href="#" class="info">Infos</a>
@@ -69,7 +40,7 @@
 							</div>
 							<div class="col-1_4">
 								<div class="view view-first">
-									<img src="img/thumbs_head.jpg" alt="thumbs_head">
+									<img src="img/festwochenende_samstag.jpg" alt="thumbs_head">
 									<div class="mask">
 										<h2>Programm</h2>
 										<a href="#" class="info">Infos</a>
@@ -88,7 +59,7 @@
 							</div>
 							<div class="col-1_4">
 								<div class="view view-first">
-								    <img src="img/thumbs_head.jpg" alt="thumbs_head">
+								    <img src="img/festwochenende_sonntag.jpg" alt="thumbs_head">
 								    <div class="mask">
 								    	<h2>Programm</h2>
 										<a href="#" class="info">Infos</a>
@@ -107,7 +78,7 @@
 							</div>
 							<div class="col-1_4">
 								<div class="view view-first">
-								    <img src="img/thumbs_head.jpg" alt="thumbs_head">
+								    <img src="img/gewerbeschau_westenholz.jpg" alt="thumbs_head">
 								    <div class="mask">
 								    	<h2>Programm</h2>
 										<a href="#" class="info">Infos</a>
@@ -231,69 +202,7 @@ Arbeits- und Ausbildungsplätze vor Ort.
 						</div>
 					</div>
 				</div>
-			<div class="divider_footer"></div>
-			<div class="footer_bg">
-				<div class="content">
-					<div class="footer">
-						<div class="container flyBottom">
-						    <div class="row">
-						        <div class="col-1_4 footer_border">
-							        <h2>Allgemein</h2>
-							        Das Dorf<br/>
-									Das Festjahr<br/>
-									Das Buch<br/>
-									Arbeitsgruppen<br/>
-									Presse<br/>
-									Downloads<br/>
-									Anfahrt<br/>
-									Impressum<br/>
-							    </div>
-						        <div class="col-1_4 footer_border">
-							        <h2>Festjahr</h2>
-							        Gewerbetag<br/>
-									Festwochenende Freitag<br/>
-									Festwochenende Samstag<br/>
-									Festwochenende Sonntag<br/>
-									Busfahrpläne<br/>
-									Kirchenjubiläum<br/>
-									Deutscher Wandertag<br/>
-									Hinweistafeln<br/>
-							    </div>
-						        <div class="col-1_4 footer_border">
-							    	<h2>Suche</h2>
-							    	<form action="suche.php">
-										<input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
-									</form>
-						        </div>
-						        <div class="col-1_4">
-							        <h2>Kontakt</h2>
-							        	<form method="POST" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" name="contact">
-											<input type="text" name="name" placeholder="Name" />
-											<input type="text" name="mail" placeholder="E-Mail" />
-											<textarea  type="text" name="comment" rows="5"  placeholder="Kommentar"></textarea>
-											<input type="submit" value="senden" />
-							        	</form>
-							        	<?php
-								        	if ($fehler == 0){
-									        	echo "
-									        	Vielen Dank für Ihre Mitteilung. <br/>Sie erhalten eine Kopie an '$mail'.
-									        	";
-								        	}
-								        	?>
-						        </div>
-						    </div>
-						</div>
-					</div>
-				</div>
-			</div>
+			<?php include ("footer.php");?>
 		</div>
 	</body>
 </html>
-
-<script>
-$(document).ready(function() {
-     $('#tipue_search_input').tipuesearch({
-          'mode': 'live'
-     });
-});
-</script>

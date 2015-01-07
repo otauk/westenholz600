@@ -92,7 +92,8 @@
 @icon-info: 				"\f0eb";				//
 @icon-warning:		"\f071";
 @icon-danger:			"\f00d";
-@icon-list:				"\f101";				// spitze Klammer rechts
+@icon-button:			"\f101";				// spitze Klammer rechts
+@icon-list:				"\f0c8";				// Quadrat
 @icon-search:			"\f002";				// Lupe
 /*
 *	=============================================
@@ -279,10 +280,29 @@ body {
 }
 
 .header {
-	height: 1080px;
-	//height: 500px;					entwicklung
-	background: url("../img/header.jpg");
 	padding: none;
+	&.index {
+	height: 1080px;
+	background: url("../img/header.jpg");
+	}
+	&.sub {
+		height: 400px;
+		&.dorf {
+			background: url("../img/historie.jpg");
+		}
+		&.festjahr {
+			background: url("../img/header.jpg");
+		}
+		&.buch {
+			background: url("../img/header.jpg");
+		}
+		&.media {
+			background: url("../img/header.jpg");
+		}
+		&.kontakt {
+			background: url("../img/header.jpg");
+		}
+	}
 }
 
 .logo {
@@ -292,6 +312,16 @@ body {
 	position: fixed;
 	top:125px;
 }
+
+.sublogo {
+	width: 300px;
+	height: 200px;
+		background:  url("../img/w600_logo_klein.png") no-repeat;
+		top: 15px;
+		margin-left:15px;
+		z-index: @index-10;
+		position: fixed;
+	}
 
 .picnav {
 	width:100%;
@@ -315,7 +345,7 @@ body {
 }
 
 .main {
-	height: 540px;
+	//height: 540px;
 }
 
 .rinde2 {
@@ -371,7 +401,7 @@ body {
 */
 
 // Standard
-//@import "navi-dropdown.less";
+@import "navi-dropdown.less";
 .navi {
 	position: fixed;
 	top:0;
@@ -389,6 +419,55 @@ body {
 	top:0;
 	height: 65px;
 	z-index: @index-5;
+	}
+
+.subnav {
+	display: block;
+	height: 100px;
+	padding: @space-base;
+	background: @color-c5;
+	.font-base ();
+	text-align: center;
+	font-size: @fs-large;
+	& a {
+		color: @color-0;
+		padding: @space-base;
+		&:hover {
+			color:@color-c4;
+			text-decoration: none;
+		}
+	}
+}
+
+.anchor{
+    position:relative;
+    top:-110px;
+    }
+
+.top_btn {
+	display:none;
+	position:fixed;
+	right:5px;
+	bottom:5px;
+	padding:1em;
+	background: rgba(0,0,0,0.3);
+	border-radius:2px;
+	text-decoration:none;
+	text-align:center;
+	cursor:pointer;
+	color:#fff;
+	z-index:50000;
+	}
+
+.top_btn:hover {
+	background: rgba(0,0,0,0.5);
+	text-decoration:none;
+	color:#fff;
+	}
+
+.top_btn:before {
+	content: "\f062";
+    font-family: FontAwesome;
 	}
 
 // mobile
@@ -414,12 +493,12 @@ label[for="nav-trigger"] {
 */
 a {
 	&:link, &:visited {
-		color:@color-c4;
+		//color:@color-c4;
 		text-decoration: none;
 	}
 	&:hover, &:active, &:focus {
-		background-color: none;
-		text-decoration: underline;
+		//background-color: none;
+		//text-decoration: underline;
 	}
 }
 /*
@@ -429,13 +508,14 @@ a {
 */
 h1, h2, h3, h4, h5, h6 {
 	.font-base ();
-	color:@color-c4;
 }
 h1 {
 	font-size: @fs-h1;
+	color:@color-c4;
 	}
 h2 {
 	font-size:@fs-h2;
+	color:@color-c5;
 	}
 
 .footer h2 {
@@ -447,26 +527,27 @@ h2 {
 *	%%%%%%%%%%%%%%%%%%%%
 */
 ul {
-	padding: @space-base;
+	padding: @space-base 0;
 	list-style-type: none;
 	& li:before {
 		.font-FA;
 		content: @icon-list;
-		padding-right: 5px;
+		padding-right: @space-large;
+		color:@color-c5;
 	}
 	& ul {
 		padding:0 @space-base;
 		margin-left:-5px;
 		& li:before {
 			.font-FA;
-			content:  @icon-list@icon-list;
+			content:  @icon-list;
 			padding-right: 5px;
 		}
 		& ul {
 			margin-left:3px;
 			& li:before {
 			.font-FA;
-			content:  @icon-list@icon-list@icon-list;
+			content:  @icon-list;
 			padding-right: 5px;
 			}
 		}
@@ -544,7 +625,7 @@ input, textarea {
 		&:after {
 			.font-FA ();
 			font-size: @fs-large;
-			content: @icon-list;
+			content: @icon-button;
 			color:#fff;
 			padding-right:8px;
 			vertical-align: top;
@@ -611,16 +692,14 @@ input, textarea {
 		background-position:left bottom;
 		color: @color-base;
 		}
-	}
-	& a {
+		& a {
 		color:@color-0;
 		display: block;
 		&:before {
-		transition: all 0.2s ease;
 		display: inline-block;
 		margin: 6px 15px 0 0;
 		.font-FA ();
-		content: @icon-list;
+		content: @icon-button;
 		color: @color-c4;
 		}
 		&:hover, &:active, &:focus {
@@ -635,14 +714,15 @@ input, textarea {
 			transform:translate(5px,0);
 		}
 	}
+	}
 
 	& td {
-		width:@onethird-percent;
-		padding: 0 @space-base;
+		padding: 5px 50px;
+		text-indent: -18px;
 		/*
 			&:before {
 			.font-FA ();
-			content: @icon-list;
+			content: @icon-button;
 			padding-right: @space-base;
 			transition: all 0.2s ease;
 			color: @color-c4;
@@ -799,7 +879,7 @@ text-transform: uppercase;
 		&:before {
 			.font-FA ();
 			transition:background 0.5s ease;
-			content: @icon-list;
+			content: @icon-button;
 			background: linear-gradient(to left, @color-c4 50%, @color-c1 50%);
 			background-size: 201% 100%;
 			background-position:right bottom;
@@ -824,108 +904,8 @@ text-transform: uppercase;
 	border-right: 1px solid @color-c4;
 }
 
-
-// TEST
-
-/* General menu styling */
-.nav {
-position: relative;
-margin: 0;
-padding: 0;
-height: 110px;
-background: rgba(255,255,255,0.6);
-}
-/* The main navigation link containers */
-.nav>li {
-	display: block;
-	float: right; /* Displaying them on the same line */
-	margin: 0;
-	padding: 0;
-	&:before {
-		content: none;
-	}
-}
-/* The main navigation links */
-.nav>li>a {
-/* Layout */
-display: block;
-position: relative;
-padding: 40px;
-/* Text */
-color: @color-0;
-font-size: 22px;
-text-decoration: none;
-/* Making the color to change on hover with a transition */
--webkit-transition: color .3s ease-in;
--moz-transition: color .3s ease-in;
--o-transition: color .3s ease-in;
--ms-transition: color .3s ease-in;
-}
-/* Changing the color on hover */
-.nav>li>a:hover, .nav>li:hover>a {
-border-bottom: 5px solid @color-c4;
-}
-/* The submenus */
-.nav ul {
-position: absolute;
-margin: 0;
-padding: 0;
-list-style: none;
-display: block;
-}
-/* General layout settings for the link containers of the submenus */
-.nav ul li {
-	position: absolute;
-	top: -9999px; /* Hiding them */
-	height: 0px;
-	display: block;
-	margin: 0;
-	padding: 0;
-	/* Making them to expand their height with a transition, for a slide effect */
-	-webkit-transition: height .2s ease-in;
-	-moz-transition: height .2s ease-in;
-	-o-transition: height .2s ease-in;
-	-ms-transition: height .2s ease-in;
-	&:before {
-		content: none;
-	}
-
-}
-/* Displays the submenu links, by expading their containers (with a transition, previously defined) and by repositioning them */
-.dropdown:hover>ul>li {
-height: 30px;
-position: relative;
-top: auto;
-}
-/* The submenu links */
-.nav ul li a {
-/* Layout */
-padding: 0 @space-base;
-width: auto;
-display: block;
-position: relative;
-/* Text */
-font-family: "Open Sans Condensed", Arial, Helvetica, sans-serif;
-color: @color-0;
-text-decoration: none;
-/* Background & effects */
-background: rgba(255,255,255,0.6);
--webkit-transition: color .1s ease-in, background .2s ease-in;
--moz-transition: color .1s ease-in, background .2s ease-in;
--o-transition: color .1s ease-in, background .2s ease-in;
--ms-transition: color .1s ease-in, background .2s ease-in;
-}
-/* Changing the link's color and background on hover */
-.nav ul li:hover>a, .nav ul li a:hover {
-color: @color-c4;
-}
-/* Making the level 2 (or higher) submenus to appear at the right of their parent */
-.nav ul .dropdown:hover ul {
-margin-left: 100%;
-width:100%;
-top: 0px;
-}
-
-.nav ul .dropdown ul {
-border-left: 5px solid red;
+.slideshow {
+	width:250px;
+	height: 240px;
+	background-color: green;
 }
