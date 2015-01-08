@@ -1,5 +1,4 @@
 <div class="divider_footer"></div>
-<a class="top_btn"></a>
 			<div class="footer_bg">
 				<div class="content">
 					<div class="footer">
@@ -30,16 +29,16 @@
 						        <div class="col-1_4 footer_border">
 							    	<h2>Suche</h2>
 							    	<form action="suche.php">
-										<input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+										<input type="text" name="q" id="tipue_search_input" autocomplete="off" disabled="disabled">
 									</form>
 						        </div>
 						        <div class="col-1_4">
 							        <h2>Kontakt</h2>
-							        	<form method="POST" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" name="contact">
-											<input type="text" name="name" placeholder="Name" />
-											<input type="text" name="mail" placeholder="E-Mail" />
-											<textarea  type="text" name="comment" rows="5"  placeholder="Kommentar"></textarea>
-											<input type="submit" value="senden" />
+							        	<form method="POST" action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" name="contact" onsubmit=" alert('Vielen Dank für Ihre Mitteilung.');" >
+											<input type="text" id="name" name="name" placeholder="Name" />
+											<input type="text" id="mail" name="mail" placeholder="E-Mail" />
+											<textarea  type="text" id="comment" name="comment" rows="5"  placeholder="Kommentar"></textarea>
+											<input type="submit" value="senden" id="submitbutton"/>
 							        	</form>
 							        	<?php
 								        	if ($fehler == 0){
@@ -54,3 +53,23 @@
 					</div>
 				</div>
 			</div>
+		</div>
+	</body>
+</html>
+
+<script>
+$(document).ready(function (){
+    validate();
+    $('#name, #mail, #comment').change(validate);
+});
+
+function validate(){
+    if ($('#name').val().length   >   0   &&
+        $('#mail').val().length  >   0   &&
+        $('#comment').val().length    >   0) {
+        $("input[type=submit]").prop("disabled", false);
+    }
+    else {
+        $("input[type=submit]").prop("disabled", true);
+    }
+}</script>

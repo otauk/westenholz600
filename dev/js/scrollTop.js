@@ -19,8 +19,8 @@ $( document ).ready(function() {
 
 // Show/Hide Button
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 5) 
+    if ($(this).scrollTop() > 50)
 	{$('.top_btn').fadeIn(); }
-	else 
+	else
 	{$('.top_btn').fadeOut();}
 });

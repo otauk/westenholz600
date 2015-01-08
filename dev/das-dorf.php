@@ -20,16 +20,18 @@
 					<a href="#dorf">
 						Das Dorf
 					</a>
+					<span class="subnav divider">|</span>
 					<a href="#logo">
 						Jubiläumslogo
 					</a>
+					<span class="subnav divider">|</span>
 					<a href="#historie">
 						Historie
 					</a>
 				</div>
 			</div>
-			<div class="content">
-				<div class="main">
+			<div class="rinde first">
+				<div class="content">
 					<div class="container flyLeft1">
 						<div class="row">
 							<div class="col-4_4 ">
@@ -72,42 +74,43 @@ Arbeits- und Ausbildungsplätze vor Ort.
 					</div>
 				</div>
 			</div>
-			<div class="divider_main"></div>
+			<div class="divider_1"></div>
 			<div class="content">
-				<div class="main">
-					<div class="container flyLeft1">
-						<div class="row">
-							<div class="col-2_4 ">
-								<a name="logo" class="anchor">&nbsp;</a>
-								<h1>Jubiläumslogo</h1>
-								<h2>Warum Dorf erleben</h2>
-									<ul>
-										<li>item 1</li>
-										<li>item 1</li>
-										<li>item 1</li>
-										<li>item 1</li>
-										<li>item 1</li>
-										<li>item 1</li>
-									</ul>
+				<div class="container flyLeft1">
+					<div class="row">
+						<div class="col-4_4 ">
+							<h1>Jubiläumslogo</h1>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-2_4 ">
+							<a name="logo" class="anchor">&nbsp;</a>
+							<h2>Warum Dorf erleben</h2>
+								<ul>
+									<li>item 1</li>
+									<li>item 1</li>
+									<li>item 1</li>
+									<li>item 1</li>
+									<li>item 1</li>
+									<li>item 1</li>
+								</ul>
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-								<h2>Warum das Logo so aussieht, wie es aussieht</h2>
+							<h2>Warum das Logo so aussieht, wie es aussieht</h2>
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-							</div>
-							<div class="col-2_4">
-								<img src="img/image.jpeg" alt="image" width="300" height="200" />
-							</div>
+						</div>
+						<div class="col-2_4">
+							<img src="img/image.jpeg" alt="image" width="300" height="200" />
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="divider_buch"></div>
-			<div class="rinde2">
-			<div class="content">
-					<div class="buch">
+			<div class="divider_2"></div>
+			<div class="rinde">
+				<div class="content">
 					<div class="container flyLeft2">
 						<div class="row">
 							<div class="col-4_4">
@@ -160,8 +163,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 						</div>
 					</div>
 				</div>
-				</div>
+
 			<?php include ("footer.php");?>
+			</div>
 		</div>
 	</body>
 </html>

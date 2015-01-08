@@ -9,9 +9,6 @@
 	else if (empty($comment)) {$fehler = 3;}
 	else $fehler  = 0;
 ?>
-	<body>
-		<div class="navi_container"></div>
-		<div class="wrapper">
 			<div class="header index"></div>
 			<div class="content">
 				<div class="logo"></div>
@@ -99,19 +96,18 @@
 					</div>
 				</div>
 			</div>
-			<div class="rinde"></div>
-			<div class="divider_main"></div>
+			<div class="placer rinde"></div>
+			<div class="divider_1"></div>
 			<div class="content">
-				<div class="main">
-					<div class="container flyLeft1">
-						<div class="row">
-							<div class="col-4_4 ">
-								<h1>Das Dorf</h1>
-							</div>
+				<div class="container flyLeft1">
+					<div class="row">
+						<div class="col-4_4 ">
+							<h1>Das Dorf</h1>
 						</div>
-						<div class="row">
-							<div class="col-2_4">
-						Westenholz ist mit fast 32 Quadratkilometern und 3.817 Einwohnern der größte
+					</div>
+					<div class="row">
+						<div class="col-2_4">
+					Westenholz ist mit fast 32 Quadratkilometern und 3.817 Einwohnern der größte
 Ortsteil der Stadt Delbrück. Westenholz überzeugt durch ein hohes ehrenamtliches
 Engagement, das sich auch durch die Vielzahl der Vereine, mit über 35 an der Zahl,
 belegen lässt. Die Liebe zum Ort hat viele Bürgerinnen und Bürger, Vereine und
@@ -121,28 +117,27 @@ Ehrgeizige Bauprojekte, wie das Sport- und Begegnungszentrum, kennzeichnen das
 große gemeinschaftliche Engagement der Bürgerinnen und Bürger. Ein bedeutender
 Erfolg dieser Einsatzfreudigkeit war 1985 "Bundesgold" beim Wettbewerb
 "Unser Dorf soll schöner werden".
-							</div>
-							<div class="col-2_4">
+						</div>
+						<div class="col-2_4">
 Weiterhin sind eine Vielzahl von Gewerbebetrieben in Westenholz Zuhause. Viele
 von ihnen haben ihre Betriebe bereits in dritter und vierter Generation und bieten
 Arbeits- und Ausbildungsplätze vor Ort.
-						<div class="btn">
-							<div class="btn label">historie</div>
-							<div class="btn bar"></div>
-							<div class="btn active"></div>
-						</div>
-						<div class="btn">
-							<div class="btn label">jubiläumslogo</div>
-							<div class="btn bar"></div>
-							<div class="btn active"></div>
-						</div>
-							</div>
+					<div class="btn">
+						<div class="btn label">historie</div>
+						<div class="btn bar"></div>
+						<div class="btn active"></div>
+					</div>
+					<div class="btn">
+						<div class="btn label">jubiläumslogo</div>
+						<div class="btn bar"></div>
+						<div class="btn active"></div>
+					</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="divider_buch"></div>
-			<div class="rinde2">
+			<div class="divider_2"></div>
+			<div class="book rinde">
 			<div class="content">
 					<div class="buch">
 					<div class="container flyLeft2">
@@ -203,6 +198,3 @@ Arbeits- und Ausbildungsplätze vor Ort.
 					</div>
 				</div>
 			<?php include ("footer.php");?>
-		</div>
-	</body>
-</html>
