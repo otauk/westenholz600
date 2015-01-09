@@ -30,12 +30,14 @@ controller = new ScrollMagic();
 		var sublogo = TweenMax.fromTo($(".sublogo"), 0.2,
 								{
 									backgroundImage: "url('img/w600_logo_ohne.png')",
+									marginLeft:"30px",
 									ease:Power2.easeOut
 
 								},
 								{
 									backgroundImage: "url('img/w600_logo_klein.png')",
 									backgroundRepeat: "no-repeat",
+									marginLeft:"10px",
 									ease:Power2.easeOut
 								}
 								);

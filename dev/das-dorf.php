@@ -27,8 +27,6 @@
 							<div class="col-4_4 ">
 								<h1>Das Dorf</h1>
 							</div>
-						</div>
-						<div class="row">
 							<div class="col-2_4">
 						Westenholz ist mit fast 32 Quadratkilometern und 3.817 Einwohnern der größte
 Ortsteil der Stadt Delbrück. Westenholz überzeugt durch ein hohes ehrenamtliches
@@ -71,8 +69,6 @@ Arbeits- und Ausbildungsplätze vor Ort.
 						<div class="col-4_4 ">
 							<h1>Jubiläumslogo</h1>
 						</div>
-					</div>
-					<div class="row">
 						<div class="col-2_4 ">
 							<a name="logo" class="anchor">&nbsp;</a>
 							<h2>Warum Dorf erleben</h2>

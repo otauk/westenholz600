@@ -227,7 +227,7 @@ body {
 	height: 100px;
 		background:  url("../img/w600_logo_klein.png") no-repeat;
 		top: 5px;
-		margin-left:10px;
+		margin-left:30px;
 		z-index: @index-10;
 		position: fixed;
 	}
@@ -325,6 +325,7 @@ body {
 	top:0;
 	height: 65px;
 	z-index: @index-5;
+	margin-bottom:0;
 	}
 
 .subnav {
@@ -335,7 +336,7 @@ body {
 	height: @subnav-height;
 	padding:  @subnav-height/3;
 	margin-top: -(@subnav-height/3);
-	margin-bottom: @subnav-height;
+//margin-bottom: @subnav-height;
 	.font-base ();
 	text-align: center;
 	font-size: @fs-large;
@@ -451,6 +452,8 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
 	font-size: @fs-h1;
 	color:@color-c4;
+	margin-top:@space-large*2;
+
 	}
 h2 {
 	font-size:@fs-h2;
@@ -611,6 +614,7 @@ input, textarea {
 		text-transform: uppercase;
 		cursor: default;
 		font-size: @fs-picnav-day;
+		font-weight: normal;
 	}
 	& tr {
 		cursor: pointer;

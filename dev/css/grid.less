@@ -7,15 +7,20 @@
 
 .row {
 	margin: 0 /*-@space-base*/;
-	margin-bottom: 20px;
+	padding-bottom: 60px;
 	&:before, &:after {
 	display: table;
     content:"";
     clear:both;
 	}
-	&:last-child {
+	&.first {
+		padding-bottom:0;
+	}
+	/*
+		&:last-child {
 		margin-bottom: 0;
 	}
+	*/
 }
 
 [class*='col-'] {

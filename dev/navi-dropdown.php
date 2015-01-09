@@ -1,5 +1,5 @@
 				<div class="container">
-					<div class="row">
+					<div class="row first">
 						<div class="col-4_4">
 							<div class="navi">
 								<ul class="nav clean">

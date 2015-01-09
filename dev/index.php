@@ -1,5 +1,4 @@
 <?php include("header.php");?>
-<?php include("navi-dropdown.php");?>
 <?php
 	// Variablen einsammeln
 	$name = $_POST["name"];
@@ -104,8 +103,6 @@
 						<div class="col-4_4 ">
 							<h1>Das Dorf</h1>
 						</div>
-					</div>
-					<div class="row">
 						<div class="col-2_4">
 					Westenholz ist mit fast 32 Quadratkilometern und 3.817 Einwohnern der größte
 Ortsteil der Stadt Delbrück. Westenholz überzeugt durch ein hohes ehrenamtliches
@@ -144,8 +141,6 @@ Arbeits- und Ausbildungsplätze vor Ort.
 							<div class="col-4_4">
 								<h1>Das Buch</h1>
 							</div>
-						</div>
-						<div class="row">
 							<div class="col-2_4">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Some text in a paragraph
 							</div>
