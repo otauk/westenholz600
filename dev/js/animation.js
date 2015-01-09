@@ -8,6 +8,7 @@ controller = new ScrollMagic();
 		var logo = TweenMax.fromTo($(".logo"), 0.2,
 								{
 									backgroundImage: "url('img/w600_logo.png')",
+									marginLeft:"15px",
 									ease:Power2.easeOut
 
 								},
@@ -16,13 +17,30 @@ controller = new ScrollMagic();
 									backgroundRepeat: "no-repeat",
 									//scale: 0.2,
 									//top: "-122px",
-									top: "15px",
-									marginLeft:"15px",
+									top: "5px",
+									marginLeft:"10px",
 									ease:Power2.easeOut
 								}
 								);
 		var scene = new ScrollScene({offset:5})
 		.setTween(logo)
+		.addTo(controller);
+
+			// Sublogo
+		var sublogo = TweenMax.fromTo($(".sublogo"), 0.2,
+								{
+									backgroundImage: "url('img/w600_logo_ohne.png')",
+									ease:Power2.easeOut
+
+								},
+								{
+									backgroundImage: "url('img/w600_logo_klein.png')",
+									backgroundRepeat: "no-repeat",
+									ease:Power2.easeOut
+								}
+								);
+		var scene = new ScrollScene({offset:5})
+		.setTween(sublogo)
 		.addTo(controller);
 
 		// Navigation
@@ -55,7 +73,6 @@ controller = new ScrollMagic();
 		// Navigation Li
 		var animNaviLi = TweenMax.to($(".shrink"), 0.2,
 								{
-									padding: "0px",
 									backgroundColor:"none"
 								});
 		var scene = new ScrollScene({offset: 5})

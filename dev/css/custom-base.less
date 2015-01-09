@@ -101,8 +101,13 @@
 *	=============================================
 */
 
+// Grid components
 @outer-container:	1920px;
-@inner-container:	1170px;
+@inner-container:	1200px;
+@breakpoint-small:  768px;
+@breakpoint-medium: 992px;
+@breakpoint-large:  1200px;
+
 @space-base: 		15px;
 @space-large: 		ceil((@space-base * 2.0));
 @subnav-height: 100px;
@@ -180,7 +185,7 @@ body {
 	padding: none;
 	&.index {
 	height: 1080px;
-	background: url("../img/header.jpg");
+	background: url("../img/header_4.jpg");
 	}
 	&.sub {
 		height: 400px;
@@ -203,26 +208,26 @@ body {
 }
 
 .logo {
-	width: 595px;
-	height: 305px;
+	width: 520px;
+	height: 280px;
 	z-index: @index-10;
 	position: fixed;
 	top:125px;
 }
 
 .sublogo {
-	width: 150px;
+	width: 180px;
 	height: 100px;
 		background:  url("../img/w600_logo_klein.png") no-repeat;
-		top: 15px;
-		margin-left:15px;
+		top: 5px;
+		margin-left:10px;
 		z-index: @index-10;
 		position: fixed;
 	}
 
 .picnav {
 	width:100%;
-	min-width: 968px;
+	min-width: @breakpoint-medium;
 	text-align: center;
 	margin-top:-275px;
 	visibility: hidden;
@@ -237,7 +242,7 @@ body {
 .rinde {
 	background: url(../img/wood.jpg);
 	&.first {
-		margin-top:-(@subnav-height/2);
+		margin-top:-(@subnav-height/2+20);
 		padding:@subnav-height/2 0;
 	}
 }
@@ -300,8 +305,8 @@ body {
 	position: fixed;
 	top:0;
 	width: 100%;
-	min-width: 968px;
-	max-width:@inner-container;
+	min-width: @breakpoint-medium;
+	max-width:(@inner-container) - (@space-base*2);
 	z-index: @index-9;
 	.font-base ();
 }
@@ -321,10 +326,10 @@ body {
 	position: relative;
 	z-index: @index-3;
 	width: 100%;
-	min-width:968px;
+	min-width:@breakpoint-medium;
 	height: @subnav-height;
 	padding:  @subnav-height/3;
-	margin-top:-(@subnav-height/2);
+	margin-top: -(@subnav-height);
 	background: @color-c5;
 	.font-base ();
 	text-align: center;
@@ -511,8 +516,9 @@ input, textarea {
 	}
 }
 .btn {
-	display: inline-block;
+	display: block;
 	position: relative;
+	margin-bottom:@space-base;
 	width:270px;
 	border:none;
 	color: @color-base;
@@ -550,15 +556,12 @@ input, textarea {
 	&.active {
 		display: block;
 		z-index: @index-0;
-		width: 270px;
 		height: 60px;
-		padding:@space-base 5px;
-		text-align: right;
 		background: linear-gradient(to left, @color-c3 50%, @color-c4 50%);
 		background-size: 200% 100%;
 		background-position:right bottom;
 		transition: all 0.5s ease;
-		margin-top:-45px;
+		margin-top:-75px;
 		&:hover, &:active, &:focus {
 			text-decoration:none;
 			background-position:left bottom;
@@ -716,7 +719,7 @@ input, textarea {
 }
 .view-first .mask {
     opacity: 0;
-    background-color: @color-c3;
+    background-color: @color-c5;
     transition: all 0.4s ease-in-out;
 }
 .view-first h2 {
@@ -771,9 +774,11 @@ text-transform: uppercase;
 .picnav_date {
 	font-size: @fs-picnav-date;
 	color: @color-base;
+	font-weight: 900;
 }
 
 .picnav_day {
+	.font-base ();
 	font-size: @fs-picnav-day;
 	color: @color-c2;
 	padding-bottom: 40px;
@@ -783,6 +788,8 @@ text-transform: uppercase;
 .picnav_event {
 	font-size: @fs-picnav-event;
 	color: @color-c3;
+	font-weight: lighter;
+	letter-spacing: 0.02em;
 }
 
 .picnav_link {

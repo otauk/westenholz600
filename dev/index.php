@@ -1,4 +1,5 @@
 <?php include("header.php");?>
+<?php include("navi-dropdown.php");?>
 <?php
 	// Variablen einsammeln
 	$name = $_POST["name"];
@@ -12,7 +13,6 @@
 			<div class="header index"></div>
 			<div class="content">
 				<div class="logo"></div>
-				<?php include("navi-dropdown.php");?>
 				<div class="picnav" id="animate2">
 					<div class="container">
 						<div class="row">

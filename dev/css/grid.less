@@ -1,53 +1,89 @@
 .container {
     width: 100%;
-    height: auto;
     max-width: @inner-container;
     margin: 0 auto;
-    display: table;
-	}
-/*-- our cleafix hack -- */
-.row:before,
-.row:after {
+}
+
+
+.row {
+	margin: 0 /*-@space-base*/;
+	margin-bottom: 20px;
+	&:before, &:after {
+	display: table;
     content:"";
-    display: table-row ;
     clear:both;
 	}
-[class*='col-'] {
-    //float: left;
-    //min-height: 1px;
-	display: table-cell;
-    width: 12.50%;
-    /*-- our gutter -- */
-    padding: @space-base;
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
+
+[class*='col-'] {
+    padding: 0 @space-base;
+    float: left;
+}
+
+// the grid
+
+// desktops large
+@media all and (min-width: @breakpoint-large){
 .col-1_8{ width: 12.50%; }
 .col-1_4{ width: 25.00%; }
 .col-2_4{ width: 50.00%; }
 .col-3_4{ width: 75.00%; }
 .col-4_4{ width: 100%;   }
+}
 
+// desktops
+@media all and (min-width: @breakpoint-medium) and (max-width:@breakpoint-large){
 
-/*
-@media all and (max-width:800px){
-    .col-1{ width: 33.33%;  }
-    .col-2{ width: 50%;     }
-    .col-3{ width: 100%;  }
-    .col-4{ width: 100%;    }
-    .col-5{ width: 100%;    }
-    .col-6{ width: 100%;    }
-    .row .col-2:last-of-type{
+.row {
+		margin: 0 15px;
+	}
+
+    .col-1_8{ width: 33.33%;  }
+    .col-1_4{ width: 50%;     }
+    .col-2_4{ width: 100%;  }
+    .col-3_4{ width: 100%;    }
+    .col-4_4{ width: 100%;    }
+    .row .col-2_4:last-of-type{
         width: 100%;
     }
-    .row .col-5 ~ .col-1{
+    .row .col-3_4 ~ .col-1_8{
         width: 100%;
     }
 }
-@media all and (max-width:650px){
-    .col-1{ width: 50%;     }
-    .col-2{ width: 100%;    }
-    .col-3{ width: 100%;    }
-    .col-4{ width: 100%;    }
-    .col-5{ width: 100%;    }
-    .col-6{ width: 100%;    }
+
+
+// tablets
+@media all and (min-width: @breakpoint-small) and (max-width:@breakpoint-medium) {
+	.row {
+		margin: 0 15px;
+	}
+    .col-1_8{ width: 33.33%;  }
+    .col-1_4{ width: 50%;     }
+    .col-2_4{ width: 100%;  }
+    .col-3_4{ width: 100%;    }
+    .col-4_4{ width: 100%;    }
+    .row .col-2_4:last-of-type{
+        width: 100%;
+    }
+    .row .col-3_4 ~ .col-1_8{
+        width: 100%;
+    }
 }
-*/
+
+
+
+// mobile
+@media all and (max-width:@breakpoint-small){
+
+	.row {
+		margin: 0 15px;
+	}
+    .col-1_8{ width: 50%;     }
+    .col-1_4{ width: 100%;    }
+    .col-2_4{ width: 100%;    }
+    .col-3_4{ width: 100%;    }
+    .col-4_4{ width: 100%;    }
+}

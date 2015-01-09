@@ -4,7 +4,7 @@
 		<title>w600 - Development</title>
 		<meta charset="utf-8">
 		<meta http-equiv="expires" content="0">
-		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<!-- Font -->
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
@@ -32,6 +32,16 @@ function onAfter(curr,next,opts) {
 	$('#caption').html(caption);
 }
 </script>
+<?php
+	// Variablen einsammeln
+	$name = $_POST["name"];
+	$mail = $_POST["mail"];
+	$comment = $_POST["comment"];
+	if (empty($name)) {$fehler = 1;}
+	else if (empty($mail)) {$fehler = 2;}
+	else if (empty($comment)) {$fehler = 3;}
+	else $fehler  = 0;
+?>
 	</head>
 	<body>
 		<a id="top-link"></a>

@@ -1,33 +1,24 @@
 <?php include("header.php");?>
-<?php
-	// Variablen einsammeln
-	$name = $_POST["name"];
-	$mail = $_POST["mail"];
-	$comment = $_POST["comment"];
-	if (empty($name)) {$fehler = 1;}
-	else if (empty($mail)) {$fehler = 2;}
-	else if (empty($comment)) {$fehler = 3;}
-	else $fehler  = 0;
-?>
-	<body>
-		<div class="navi_container"></div>
-		<div class="wrapper">
+<?php include("navi-dropdown.php");?>
 			<div class="header sub dorf"></div>
 			<div class="content">
-				<div class="sublogo"></div>
-				<?php include("navi-dropdown.php");?>
-				<div class="subnav">
-					<a href="#dorf">
-						Das Dorf
-					</a>
-					<span class="subnav divider">|</span>
-					<a href="#logo">
-						Jubiläumslogo
-					</a>
-					<span class="subnav divider">|</span>
-					<a href="#historie">
-						Historie
-					</a>
+				<a href="index.php">
+					<div class="sublogo"></div>
+				</a>
+				<div class="col-4_4">
+					<div class="subnav">
+						<a href="#dorf">
+							Das Dorf
+						</a>
+						<span class="subnav divider">|</span>
+						<a href="#logo">
+							Jubiläumslogo
+						</a>
+						<span class="subnav divider">|</span>
+						<a href="#historie">
+							Historie
+						</a>
+					</div>
 				</div>
 			</div>
 			<div class="rinde first">
