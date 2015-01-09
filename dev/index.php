@@ -137,9 +137,8 @@ Arbeits- und Ausbildungsplätze vor Ort.
 				</div>
 			</div>
 			<div class="divider_2"></div>
-			<div class="book rinde">
-			<div class="content">
-					<div class="buch">
+			<div class="rinde">
+				<div class="content">
 					<div class="container flyLeft2">
 						<div class="row">
 							<div class="col-4_4">
@@ -182,18 +181,32 @@ Arbeits- und Ausbildungsplätze vor Ort.
 						</div>
 					</div>
 				</div>
+			</div>
 					<div class="sponsoren">
 						<div class="container">
 							<div class="row">
 								<div class="col-4_4">
-									Sponsoren-Logos
+									<span class="sponsoren">
+										<img src="img/w600_logo_klein.png" alt="w600_logo_klein" width="175" height="90" />
+									</span>
+									<span class="sponsoren">
+										<img src="img/w600_logo_klein.png" alt="w600_logo_klein" width="175" height="90" />
+									</span>
+									<span class="sponsoren">
+										<img src="img/w600_logo_klein.png" alt="w600_logo_klein" width="175" height="90" />
+									</span>
+									<span class="sponsoren">Sponsoren-Logos</span>
+									<span class="sponsoren">
+										<img src="img/w600_logo_klein.png" alt="w600_logo_klein" width="175" height="90" />
+									</span>
+									<span class="sponsoren">
+										<img src="img/w600_logo_klein.png" alt="w600_logo_klein" width="175" height="90" />
+									</span>
+									<span class="sponsoren">
+										<img src="img/w600_logo_klein.png" alt="w600_logo_klein" width="175" height="90" />
+									</span>
 								</div>
 							</div>
-						</div>
-						<div class="btn">
-							<div class="btn label">historie</div>
-							<div class="btn bar"></div>
-							<div class="btn active"></div>
 						</div>
 					</div>
 				</div>

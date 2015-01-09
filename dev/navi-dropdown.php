@@ -3,9 +3,9 @@
 						<div class="col-4_4">
 							<div class="navi">
 								<ul class="nav clean">
-									<li><a href="#">Kontakt</a></li>
-									<li class="navi_border"><a href="#">Media</a></li>
-									<li class="navi_border"><a href="#">Das Buch</a></li>
+									<li><a href="kontakt.php">Kontakt</a></li>
+									<li class="navi_border"><a href="media.php">Media</a></li>
+									<li class="navi_border"><a href="buch.php">Das Buch</a></li>
 									<li class="dropdown navi_border"> <a href="#">Festjahr</a>
 										<ul>
 											<li class="dropdown"> <a href="#">Festwochenende</a>

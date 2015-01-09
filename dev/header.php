@@ -14,6 +14,7 @@
 		<!-- jQuery -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenMax.min.js"></script>
+		<script type="text/javascript" src="js/lightbox.js" ></script>
 		<script type="text/javascript" src="js/scrollTop.js" ></script>
 		<script type="text/javascript" src="js/jquery.scrollmagic.min.js"></script>
 		<script type="text/javascript" src="js/animation.js"></script>
@@ -48,3 +49,4 @@ function onAfter(curr,next,opts) {
 		<a href="#top-link" class="top_btn"></a>
 		<div class="navi_container"></div>
 		<div class="wrapper">
+			<?php include("navi-dropdown.php");?>

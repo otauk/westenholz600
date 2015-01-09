@@ -15,10 +15,10 @@ controller = new ScrollMagic();
 								{
 									backgroundImage: "url('img/w600_logo_klein.png')",
 									backgroundRepeat: "no-repeat",
-									//scale: 0.2,
-									//top: "-122px",
 									top: "5px",
 									marginLeft:"10px",
+									width: "180px",
+									height:"100px",
 									ease:Power2.easeOut
 								}
 								);

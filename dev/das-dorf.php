@@ -1,12 +1,11 @@
 <?php include("header.php");?>
-<?php include("navi-dropdown.php");?>
 			<div class="header sub dorf"></div>
 			<div class="content">
 				<a href="index.php">
 					<div class="sublogo"></div>
 				</a>
 				<div class="col-4_4">
-					<div class="subnav">
+					<div class="subnav dorf">
 						<a href="#dorf">
 							Das Dorf
 						</a>
