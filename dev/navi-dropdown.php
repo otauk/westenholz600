@@ -8,19 +8,19 @@
 									<li class="navi_border"><a href="buch.php">Das Buch</a></li>
 									<li class="dropdown navi_border"> <a href="#">Festjahr</a>
 										<ul>
-											<li class="dropdown"> <a href="#">Festwochenende</a>
+											<li class="dropdown"> <a href="festwochenende.php">Festwochenende</a>
 												<ul>
-													<li><a href="#">Freitag</a></li>
-													<li><a href="#">Samstag</a></li>
-													<li><a href="#">Sonntag</a></li>
-													<li><a href="#">Lageplan</a></li>
-													<li><a href="#">Busfahrplan</a></li>
+													<li><a href="festwochenende.php#freitag">Freitag</a></li>
+													<li><a href="festwochenende.php#samstag">Samstag</a></li>
+													<li><a href="festwochenende.php#sonntag">Sonntag</a></li>
+													<li><a href="festwochenende.php#plan">Lageplan</a></li>
+													<li><a href="festwochenende.php#plan">Busfahrplan</a></li>
 												</ul>
 											</li>
-											<li><a href="#">Gewerbetag</a></li>
-											<li><a href="#">Kirchenjubiläum</a></li>
+											<li><a href="gewerbeschau.php">Gewerbeschau</a></li>
+											<li><a href="kirchenjubilaeum.php">Kirchenjubiläum</a></li>
 					                        <li><a href="#">Veranstaltungen</a></li>
-					                        <li><a href="#">Projekte</a></li>
+					                        <li><a href="projekte.php">Projekte</a></li>
 					                        <li><a href="#">Arbeitsgruppen</a></li>
 										</ul>
 									</li>

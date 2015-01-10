@@ -18,21 +18,7 @@
 		<script type="text/javascript" src="js/scrollTop.js" ></script>
 		<script type="text/javascript" src="js/jquery.scrollmagic.min.js"></script>
 		<script type="text/javascript" src="js/animation.js"></script>
-		<script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
-		<script type="text/javascript">
-$(function() {
-    $('#slideshow').cycle({
-        fx:       'fade',
-        speed:   2000,
-        after:     onAfter
-    });
-});
-
-function onAfter(curr,next,opts) {
-	var caption = 'Bild ' + (opts.currSlide + 1) + ' von ' + opts.slideCount;
-	$('#caption').html(caption);
-}
-</script>
+		<script type="text/javascript" src="js/jquery.slides.min.js"></script>
 <?php
 	// Variablen einsammeln
 	$name = $_POST["name"];

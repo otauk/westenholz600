@@ -27,18 +27,18 @@ controller = new ScrollMagic();
 		.addTo(controller);
 
 			// Sublogo
-		var sublogo = TweenMax.fromTo($(".sublogo"), 0.2,
+		var sublogo = TweenMax.fromTo($(".sublogo"), 0.4,
 								{
 									backgroundImage: "url('img/w600_logo_ohne.png')",
 									marginLeft:"30px",
-									ease:Power2.easeOut
+									ease:Power4.easeOut
 
 								},
 								{
 									backgroundImage: "url('img/w600_logo_klein.png')",
 									backgroundRepeat: "no-repeat",
 									marginLeft:"10px",
-									ease:Power2.easeOut
+									ease:Power4.easeOut
 								}
 								);
 		var scene = new ScrollScene({offset:5})

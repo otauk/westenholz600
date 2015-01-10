@@ -58,6 +58,7 @@
 </html>
 
 <script>
+	// Form validation
 $(document).ready(function (){
     validate();
     $('#name, #mail, #comment').change(validate);
@@ -72,4 +73,19 @@ function validate(){
     else {
         $("input[type=submit]").prop("disabled", true);
     }
-}</script>
+}
+</script>
+  <script>
+// Slider
+    $(function() {
+      $('#slides').slidesjs({
+        height: 700,
+        play: {
+          active: true,
+          auto: true,
+          interval: 4000,
+          swap: true
+        }
+      });
+    });
+  </script>

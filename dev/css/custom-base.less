@@ -60,7 +60,7 @@
 @fs-large:         	ceil((@fs-base * 1.25)); //
 @fs-small:         	ceil((@fs-base * 0.85)); //
 @fs-h1:            	floor((@fs-base * 2.6)); //
-@fs-h2:            	floor((@fs-base * 2.15)); //
+@fs-h2:            	floor((@fs-base * 1.45)); //
 @fs-h3:            	ceil((@fs-base * 1.7)); //
 @fs-h4:            	ceil((@fs-base * 1.25)); //
 @fs-h5:            	@fs-base;
@@ -190,26 +190,44 @@ body {
 
 .header {
 	padding: none;
-	&.index {
 	height: 1080px;
-	background: url("../img/header_4.jpg");
+	&.index {
+	background: url("../img/headergrafiken/header_end_2.jpg");
+	}
+	&.gewerbeschau {
+	background: url("../img/headergrafiken/gewerbeschau_westenholz_600jahre.jpg");
+	}
+	&.festwochenende {
+	background: url("../img/headergrafiken/festwochenende_westenholz.jpg");
 	}
 	&.sub {
 		height: 400px;
 		&.dorf {
-			background: url("../img/historie.jpg");
+			background: url("../img/headergrafiken/historie.jpg");
 		}
 		&.festjahr {
 			background: url("../img/header.jpg");
 		}
+		&.kirchenjubilaeum {
+			background: url("../img/kirchenjubilaeum.jpg");
+		}
+		&.projekte {
+			background: url("../img/projekte.jpg");
+		}
+		&.wandertag {
+			background: url("../img/wandertag.jpg");
+		}
+		&.arbeitsgruppen {
+			background: url("../img/arbeitsgruppen.jpg");
+		}
 		&.buch {
-			background: url("../img/header_buch.jpg");
+			background: url("../img/headergrafiken/buch.jpg");
 		}
 		&.media {
-			background: url("../img/media.jpg");
+			background: url("../img/headergrafiken/media.jpg");
 		}
 		&.kontakt {
-			background: url("../img/arbeitsgruppen.jpg");
+			background: url("../img/headergrafiken/kontakt.jpg");
 		}
 	}
 }
@@ -236,14 +254,14 @@ body {
 	width:100%;
 	min-width: @breakpoint-medium;
 	text-align: center;
-	margin-top:-275px;
+	margin-top:-260px;
 	visibility: hidden;
 }
 
 .placer {
 	height: 360px;
 	width: 100%;
-	margin-top: -@space-base;
+	margin-top: -60px;
 }
 
 .rinde {
@@ -336,7 +354,7 @@ body {
 	height: @subnav-height;
 	padding:  @subnav-height/3;
 	margin-top: -(@subnav-height/3);
-//margin-bottom: @subnav-height;
+	margin-bottom: @space-large;
 	.font-base ();
 	text-align: center;
 	font-size: @fs-large;
@@ -363,7 +381,7 @@ body {
 		display: inline;
 		position: relative;
 		padding: 40px;
-		color: @color-0;
+		color: @color-base;
 		font-size: 22px;
 		text-decoration: none;
 		/* Making the color to change on hover with a transition */
@@ -452,16 +470,20 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
 	font-size: @fs-h1;
 	color:@color-c4;
-	margin-top:@space-large*2;
-
+	//margin-top:@space-large*2;
 	}
 h2 {
 	font-size:@fs-h2;
 	color:@color-c5;
+	margin:0;
 	}
 
 .footer h2 {
 	font-size: @fs-footer-h2;
+}
+
+p {
+	padding: @space-base 0;
 }
 	/*
 *	%%%%%%%%%%%%%%%%%%%%
@@ -470,6 +492,7 @@ h2 {
 */
 ul {
 	padding: @space-base 0;
+	margin: 0;
 	list-style-type: none;
 	& li:before {
 		.font-FA;
@@ -849,11 +872,17 @@ text-transform: uppercase;
 	border-right: 1px solid @color-c4;
 }
 
+/*
+*	%%%%%%%%%%%%%%%%%%%%
+* 	hover effekt
+*	%%%%%%%%%%%%%%%%%%%%
+*/
+
 .slideshow {
-	width:250px;
-	height: 240px;
-	background-color: green;
+margin-top:5px;
 }
+@import "slideshow.less";
+
 
 .arbeitsgruppe a {
 	color: @color-0;
@@ -873,5 +902,37 @@ text-transform: uppercase;
 .karte {
 	margin:@subnav-height 15px 0 15px;
 	height: @subnav-height*3;
+}
+
+.time {
+	display: block;
+	position: relative;
+	margin-bottom:@space-base;
+	width:270px;
+	border:none;
+	color: @color-base;
+	.font-sans ();
+	text-transform: uppercase;
+	text-align:left;
+	cursor:pointer;
+	font-size: @fs-button;
+	&.label {
+		display: block;
+		z-index: @index-2;
+		width: 240px;
+		padding:@space-base 5px;
+		background-color: @color-c2;
+		pointer-events: none;
+	}
+	&.active {
+		display: block;
+		z-index: @index-0;
+		height: 60px;
+		background: linear-gradient(to left, @color-c3 50%, @color-c4 50%);
+		background-size: 200% 100%;
+		background-position:right bottom;
+		transition: all 0.5s ease;
+		margin-top:-75px;
+	}
 }
 
