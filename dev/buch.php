@@ -27,7 +27,7 @@
 								</ul>
 						</div>
 						<div class="col-1_4">
-						<img src="img/buch/buch_mockup.png" alt="buch_mockup" width="50%" height="50%" />
+<img src="img/buch/buch_mockup.png" alt="buch_mockup" width="312" height="300" />
 						</div>
 						<div class="col-1_4">
 							<div class="btn">

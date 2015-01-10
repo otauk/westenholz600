@@ -26,7 +26,7 @@ Mehr Informationen rund um die Gewerbeschau finden Sie demnächst an dieser Stel
 							</p>
 						</div>
 						<div class="col-2_4 text-centered">
-Wappen Westenholz
+<img src="img/wappen_westenholz.png" alt="wappen_westenholz" width="150" height="173" />
 						</div>
 						<div class="col-2_4">
 							<h2>Teilnehmende Unternehmen:</h2>
@@ -39,7 +39,7 @@ Wappen Westenholz
 								<li>Pieper + Rodehuth GmbH</li>
 								<li>Friedhelm Luebbers Metallbau Gmbh</li>
 								<li>Daniel Wilhelm Georg</li>
-								<li>Flototto Systemmobel GmbH</li>
+								<li>Flötotto Systemmöbel GmbH</li>
 								<li>Tischlerei Borgmeier</li>
 								<li>Kfz Werkstatt Brinkmeyer Jens</li>
 								<li>Alfons Bökmann</li>

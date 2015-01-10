@@ -41,9 +41,9 @@ des kirchlichen Programms.
 						<div class="col-2_4">
 							<div class="slideshow">
 								<div id="slides">
-<img src="img/Minislider/Kirchenjubil%C3%A4um/kirchenjubi_1.jpg" alt="kirchenjubi_1" width="537" height="400" />
-<img src="img/Minislider/Kirchenjubil%C3%A4um/kirchenjubi_2.jpg" alt="kirchenjubi_2" width="537" height="400" />
-<img src="img/Minislider/Kirchenjubil%C3%A4um/kirchenjubi_3.jpg" alt="kirchenjubi_3" width="622" height="450" />
+<img src="img/Minislider/Kirchenjubilaeum/kirchenjubi_1.jpg" alt="kirchenjubi_1" width="537" height="400" />
+<img src="img/Minislider/Kirchenjubilaeum/kirchenjubi_2.jpg" alt="kirchenjubi_2" width="537" height="400" />
+<img src="img/Minislider/Kirchenjubilaeum/kirchenjubi_3.jpg" alt="kirchenjubi_3" width="622" height="450" />
 								</div>
 							</div>
 						</div>

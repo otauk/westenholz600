@@ -83,7 +83,7 @@ function validate(){
         play: {
           active: true,
           auto: true,
-          interval: 4000,
+          interval: 8000,
           swap: true
         }
       });
