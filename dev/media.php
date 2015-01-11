@@ -37,7 +37,7 @@
 								<tr>
 									<td>
 										<a href=" /dev/downloads/2014-04-29-DSP  -  Jubiläum startet.pdf" target="_blank">
-										Jubiläum startet.pdf (2014.04.29.DSP) 
+										Jubiläum startet.pdf (2014.04.29.DSP)
 									</a>
 									</td>
 								</tr>
@@ -112,7 +112,7 @@
 								<tr>
 									<td>
 										<a href=" /dev/downloads/2014-10-11-WV  -  Mit neuem Logo.pdf" target="_blank">
-										Mit neuem Logo.pdf (2014.10.11.WV) 
+										Mit neuem Logo.pdf (2014.10.11.WV)
 									</a>
 									</td>
 								</tr>
@@ -193,7 +193,7 @@
 										Ötzi Westenholz.pdf (2014.12.21.NR) </a>
 									</td>
 								</tr>
-                               
+
 							</tbody></table>
 							<table class="tbl">
 								<tbody><tr>
@@ -201,7 +201,7 @@
 								</tr>
 								<tr>
 									<td>
-										<a href=" /dev/downloads/westenholz_logo_4c.zip">	
+										<a href=" /dev/downloads/westenholz_logo_4c.zip">
 4c TIF/JPG/PNG/EPS (3,5MB)
 										</a>
 									</td>
@@ -216,5 +216,6 @@
 							</tbody></table>
 						</div>
 					</div>
+				</div>
 			</div>
 <?php include ("footer.php");?>
