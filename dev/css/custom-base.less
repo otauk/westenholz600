@@ -5,9 +5,19 @@
 *	+++++
 *	version: 1.0
 *	+++++
-*
 *	##############################
 */
+
+/*
+*	=============================================
+*	@IMPORT
+*	=============================================
+*/
+@import "basic-layout.less";
+@import "grid.less";
+@import "navi-dropdown.less";
+@import "slideshow.less";
+@import "lightbox.less";
 
 /*
 *	=============================================
@@ -67,30 +77,18 @@
 @fs-h6:            	ceil((@fs-base * 0.85)); //
 @fs-button:			29px;
 @fs-picnav-date:	43px;
-@fs-picnav-day:		24px;
+@fs-picnav-day:	24px;
 @fs-picnav-event:	23px;
 @fs-picnav-link:	20px;
-@fs-footer-h2:		26px;
+@fs-footer-h2:	26px;
 @fs-footer-text:	16px;
-//@line-height-base:        1.42857143;
 @line-height-base:	ceil((@fs-base * 1.75));
-
-.hyphen () {
-	-webkit-hyphens: auto;
-	-moz-hyphens: auto;
-	hyphens: auto;
-	}
 
 /*
 *	=============================================
 *	ICONS
 *	=============================================
 */
-@icon-primary: 		"\f054";				// Haken
-@icon-success: 		"\f00c";				//
-@icon-info: 				"\f0eb";				//
-@icon-warning:		"\f071";
-@icon-danger:			"\f00d";
 @icon-button:			"\f101";				// spitze Klammer rechts
 @icon-list:				"\f0c8";				// Quadrat
 @icon-search:			"\f002";				// Lupe
@@ -137,19 +135,22 @@
 @opacity-light:		0.75;
 @opacity-vlight:	0.9;
 @opacity-none:		1;
+
+/*
+*	=============================================
+*	MIXINS
+*	=============================================
+*/
 .border-radius(@radius) {
   -webkit-border-radius: @radius;
      -moz-border-radius: @radius;
           border-radius: @radius;
 }
-@import "basic-layout.less";
-
-/*
-*	=============================================
-*	Lightbox
-*	=============================================
-*/
-@import "lightbox.less";
+.hyphen () {
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+	}
 
 /*
 *	=============================================
@@ -166,11 +167,9 @@
 
 html, body {height: 100%;}
 
-@import "grid.less";
-
 body {
 	.font-sans ();
-	.hyphen;
+	.hyphen();
 	font-size: @fs-base;
 	color: @color-c7;
 	margin: 0;
@@ -212,13 +211,13 @@ body {
 			background: url("../img/headergrafiken/kirche.jpg");
 		}
 		&.projekte {
-			background: url("../img/projekte.jpg");
+			background: url("../img/headergrafiken/projekte.jpg");
 		}
-		&.wandertag {
-			background: url("../img/wandertag.jpg");
+		&.veranstaltungen {
+			background: url("../img/headergrafiken/wandertag.jpg");
 		}
 		&.arbeitsgruppen {
-			background: url("../img/arbeitsgruppen.jpg");
+			background: url("../img/headergrafiken/arbeitsgruppen.jpg");
 		}
 		&.buch {
 			background: url("../img/headergrafiken/buch.jpg");
@@ -322,8 +321,6 @@ body {
 *	%%%%%%%%%%%%%%%%%%%%
 */
 
-// Standard
-@import "navi-dropdown.less";
 .navi {
 	position: fixed;
 	top:0;
@@ -377,7 +374,7 @@ body {
 		color: @color-0;
 		padding: 0 ;
 	}
-	& a {
+	& a:link, & a:active, & a:visited {
 		display: inline;
 		position: relative;
 		padding: 40px;
@@ -391,6 +388,7 @@ body {
 		-ms-transition: color .3s ease-in;
 		&:hover {
 			color: @color-c4;
+			text-decoration: none !important;
 		}
 	}
 }
@@ -427,22 +425,6 @@ body {
 	content: "\f062";
 	}
 
-// mobile
-/*
-	@import "navi-mobile.less";
-label[for="nav-trigger"] {display:none;}
-.mobile_nav{display: none;}
-@media all and (max-width:650px){
-.navi {display:none;}
-.mobile_nav{display: block;}
-.header {margin-top:60px;}
-
-label[for="nav-trigger"] {
-		display: block;
-	}
-}
-*/
-
 /*
 *	%%%%%%%%%%%%%%%%%%%%
 * 	links
@@ -450,17 +432,16 @@ label[for="nav-trigger"] {
 */
 a {
 	&:link, &:visited {
-		//color:@color-c4;
+		color:@color-c4;
 		text-decoration: none;
 	}
 	&:hover, &:active, &:focus {
-		//background-color: none;
-		//text-decoration: underline;
+		text-decoration: underline;
 	}
 }
 /*
 *	%%%%%%%%%%%%%%%%%%%%
-* 	headlines
+* 	text
 *	%%%%%%%%%%%%%%%%%%%%
 */
 h1, h2, h3, h4, h5, h6 {
@@ -574,6 +555,9 @@ input, textarea {
 	text-align:left;
 	cursor:pointer;
 	font-size: @fs-button;
+	& a {
+		text-decoration: none;
+	}
 	&.label {
 		display: block;
 		z-index: @index-2;
@@ -659,25 +643,25 @@ input, textarea {
 		& a {
 		color:@color-0;
 		display: block;
-		&:before {
-		display: inline-block;
-		margin: 6px 15px 0 0;
-		.font-FA ();
-		content: @icon-button;
-		color: @color-c4;
+			&:before {
+			display: inline-block;
+			margin: 6px 15px 0 0;
+			.font-FA ();
+			content: @icon-button;
+			color: @color-c4;
+			}
+			&:hover, &:active, &:focus {
+				text-decoration: none;
+			}
+			&:hover:before {
+				color:@color-base;
+				-webkit-transform:translate(5px,0);
+				-moz-transform:translate(5px,0);
+				-ms-transform:translate(5px,0);
+				-o-transform:translate(5px,0);
+				transform:translate(5px,0);
+			}
 		}
-		&:hover, &:active, &:focus {
-			text-decoration: none;
-		}
-		&:hover:before {
-			color:@color-base;
-			-webkit-transform:translate(5px,0);
-			-moz-transform:translate(5px,0);
-			-ms-transform:translate(5px,0);
-			-o-transform:translate(5px,0);
-			transform:translate(5px,0);
-		}
-	}
 	}
 
 	& td {
@@ -881,8 +865,6 @@ text-transform: uppercase;
 .slideshow {
 margin-top:5px;
 }
-@import "slideshow.less";
-
 
 .arbeitsgruppe a {
 	color: @color-0;
@@ -935,4 +917,3 @@ margin-top:5px;
 		margin-top:-75px;
 	}
 }
-

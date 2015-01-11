@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>w600 - Development</title>
+		<title>Westenholz 600 | Dorf erleben</title>
 		<meta charset="utf-8">
 		<meta http-equiv="expires" content="0">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<!-- Font -->
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
-		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css"  />
+		<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" >
 		<!-- Stylesheet -->
-		<link href="css/custom-base.css" rel="stylesheet" type="text/css"/>
-		<!-- jQuery -->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenMax.min.js"></script>
-		<script type="text/javascript" src="js/lightbox.js" ></script>
-		<script type="text/javascript" src="js/scrollTop.js" ></script>
+		<link type="text/css" rel="stylesheet" href="css/custom-base.css"  />
+		<!-- jScript -->
+		<script type="text/javascript" src="js/jquery-1.11.2.min.js" ></script>
+		<script type="text/javascript" src="js/TweenMax.min.js" ></script>
+		<script type="text/javascript" src="js/lightbox.min.js" ></script>
+		<script type="text/javascript" src="js/scrollTop.min.js" ></script>
 		<script type="text/javascript" src="js/jquery.scrollmagic.min.js"></script>
-		<script type="text/javascript" src="js/animation.js"></script>
+		<script type="text/javascript" src="js/animation.min.js"></script>
 		<script type="text/javascript" src="js/jquery.slides.min.js"></script>
 <?php
 	// Variablen einsammeln

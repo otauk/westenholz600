@@ -37,6 +37,7 @@
 							<br/>
 							E-Mail: info@westenholz600.de
 						</div>
+						<!--
 						<div class="col-2_4">
 							<h1>Arbeitsgruppen</h1>
 							<div class="arbeitsgruppe">
@@ -58,6 +59,7 @@
 								</a>
 							</div>
 						</div>
+						-->
 					</div>
 				</div>
 			</div>

@@ -6,25 +6,25 @@
 						    <div class="row">
 						        <div class="col-1_4 footer_border">
 							        <h2>Allgemein</h2>
-							        Das Dorf<br/>
-									Das Festjahr<br/>
-									Das Buch<br/>
+							        <a href="das-dorf.php">Das Dorf</a><br/>
+									<a href="">Das Festjahr</a><br/>
+									<a href="buch.php">Das Buch</a><br/>
 									Arbeitsgruppen<br/>
-									Presse<br/>
-									Downloads<br/>
-									Anfahrt<br/>
-									Impressum<br/>
+									<a href="media.php">Presse</a><br/>
+									<a href="media.php">Downloads</a><br/>
+									<a href="kontakt.php">Anfahrt</a><br/>
+									<a href="impressum.php">Impressum</a><br/>
 							    </div>
 						        <div class="col-1_4 footer_border">
 							        <h2>Festjahr</h2>
-							        Gewerbetag<br/>
-									Festwochenende Freitag<br/>
-									Festwochenende Samstag<br/>
-									Festwochenende Sonntag<br/>
-									Busfahrpläne<br/>
-									Kirchenjubiläum<br/>
-									Deutscher Wandertag<br/>
-									Hinweistafeln<br/>
+							        <a href="gewerbeschau.php">Gewerbeschau</a><br/>
+									<a href="festwochenende.php#freitag">Festwochenende Freitag</a><br/>
+									<a href="festwochenende.php#samstag">Festwochenende Samstag</a><br/>
+									<a href="festwochenende.php#sonntag">Festwochenende Sonntag</a><br/>
+									<a href="festwochenende.php#plan">Busfahrpläne</a><br/>
+									<a href="kirchenjubilaeum.php">Kirchenjubiläum</a><br/>
+									<a href="veranstaltungen.php">Deutscher Wandertag</a><br/>
+									<a href="projekte.php">Hinweistafeln</a><br/>
 							    </div>
 						        <div class="col-1_4 footer_border">
 							    	<h2>Suche</h2>

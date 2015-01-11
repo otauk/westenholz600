@@ -31,13 +31,13 @@
 							<div class="col-2_4">
 								<p>
 						Westenholz ist mit fast 32 Quadratkilometern und 3.817 Einwohnern der größte
-Ortsteil der Stadt Delbrück. Westenholz überzeugt durch ein hohes ehrenamtliches
-Engagement, das sich auch durch die Vielzahl der Vereine, mit über 35 an der Zahl,
-belegen lässt. Die Liebe zum Ort hat viele Bürgerinnen und Bürger, Vereine und
-Institutionen beflügelt, das Dorfjubiläum „600 Jahre Westenholz“ gebührend zu
+Ortsteil der Stadt Delbrück. Westenholz überzeugt durch ein hohes ehrenamtliches
+Engagement, das sich auch durch die Vielzahl der Vereine, mit über 35 an der Zahl,
+belegen lässt. Die Liebe zum Ort hat viele Bürgerinnen und Bürger, Vereine und
+Institutionen beflügelt, das Dorfjubiläum „600 Jahre Westenholz“ gebührend zu
 feiern.
 Ehrgeizige Bauprojekte, wie das Sport- und Begegnungszentrum, kennzeichnen das
-große gemeinschaftliche Engagement der Bürgerinnen und Bürger. Ein bedeutender
+große gemeinschaftliche Engagement der Bürgerinnen und Bürger. Ein bedeutender
 Erfolg dieser Einsatzfreudigkeit war 1985 "Bundesgold" beim Wettbewerb
 "Unser Dorf soll schöner werden".
 								</p>
@@ -49,14 +49,14 @@ von ihnen haben ihre Betriebe bereits in dritter und vierter Generation und biet
 Arbeits- und Ausbildungsplätze vor Ort.
 								</p>
 						<div class="btn">
-							<a href="#">
+							<a href="http://www.stadt-delbrueck.de/" target="_blank">
 							<div class="btn label">Delbrück</div>
 							<div class="btn bar"></div>
 							<div class="btn active"></div>
 							</a>
 						</div>
 						<div class="btn">
-							<a href="#">
+							<a href="http://www.westenholz.de/" target="_blank">
 							<div class="btn label">Westenholz</div>
 							<div class="btn bar"></div>
 							<div class="btn active"></div>
@@ -78,17 +78,21 @@ Arbeits- und Ausbildungsplätze vor Ort.
 						<div class="col-4_4 ">
 							<h1>Jubiläumslogo</h1>
 							<h2>Warum Dorf erleben</h2>
-								<ul>
-									<li>item 1</li>
-									<li>item 1</li>
-									<li>item 1</li>
-									<li>item 1</li>
-									<li>item 1</li>
-									<li>item 1</li>
+						  <ul>
+                                 <br />
+								  <li> Im Dorf ist immer was los!</li>
+									<li>Das Dorf bietet Raum für Begegnungen – 	man ist nie so richtig einsam und alleine</li>
+									<li>Dorfbewohner fühlen sich einbezogen in der Entwicklung ihres Dorfes</li>
+									<li>Das Dorf wird als attraktiver, naturnaher Wohn- und Arbeitsort angesehen</li>
+									<li>Das Dorf bietet Heimatgefühl und Heimatverbundenheit</li>
+									<li>Das Dorf entlastet Familien durch soziale Kontrolle<br />
+									  <br />
+
+								  </li>
 								</ul>
 								<p>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-								</p>
+Dorferleben in der Gemeinschaft erfahren! Machen Sie mit und bringen Sie sich im Dorf ein. Kommen Sie zu den vielen, verschiedenen Dorfaktivitäten im Jubiläumsjahr. Dorferleben mach Lust auf mehr! </p>
+<br />
 						</div>
 						<div class="col-2_4">
 							<h2>Warum das Logo so aussieht, wie es aussieht</h2>
@@ -101,7 +105,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 						</div>
 						<div class=""
 						<div class="col-2_4">
-							<img src="img/image.jpeg" alt="image" width="300" height="200" />
+							<img src="img/logodetails.jpg" alt="image">
 						</div>
 					</div>
 				</div>
@@ -116,41 +120,38 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 								<h1>Historie</h1>
 							</div>
 							<div class="col-2_4">
-								<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-								</p>
+Die erste urkundliche Erwähnung von Westenholz fand im Jahr 1415 statt. Außergewöhnliche Funde lassen allerdings auf eine steinzeitliche Besiedlung schließen. Von großer historischer Bedeutung kündet ein Stein, an dem die Grenzen der Kreise Paderborn, Soest und Gütersloh aufeinander treffen. Hier befand sich die alte Gerichtsstätte &quot;Freier Stuhl&quot;, wo bereits im Mittelalter Recht gesprochen wurde.
+								<p>Mehr zur Geschichte von Westenholz erfahren Sie hier:</p>
 								<table class="tbl">
 								<tr>
 									<td>
-										<a href="#">
-											Lorem Ipsum 1<br/>
-											sdf sdfdf dfsfsdf
-										</a>
+										<a href="img/downloads/Historie_westenholz_1.pdf" target="_blank">&quot;damals und heute&quot; 26 (pdf-Datei)<br />
+										Die Gründung der Pfarrei Westenholz von 1715 bis 1728</a>
 									</td>
 								</tr>
 								<tr>
 									<td>
-										<a href="#">
-											Lorem Ipsum 2
-										</a>
+										<a href="img/downloads/Historie_westenholz_2.pdf" target="_blank">&quot;damals und heute&quot; 30 (pdf-Datei)<br />
+										Westenholz im 14. und 15. Jahrhundert</a>
 									</td>
 								</tr>
 								<tr>
 									<td>
-										<a href="#">
-											Lorem Ipsum 3
-										</a>
+										<a href="img/downloads/damals_und_heuteNr. 13.pdf" target="_blank">&quot;damals und heute&quot; 13 (pdf-Datei)<br />
+Die alte Mühlenheider Schule </a>
 									</td>
 								</tr>
 							</table>
 							</div>
 							<div class="col-2_4">
 								<div id="slides">
-									<img src="img/example-slide-1.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
-									<img src="img/example-slide-2.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
-									<img src="img/example-slide-3.jpg" alt="Photo by: Mike Ranweiler Link: http://www.flickr.com/photos/27874907@N04/4833059991/">
-									<img src="img/example-slide-4.jpg" alt="Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/">
-								</div>
+									<img src="img/Minislider/Historie/historie_1.jpg" alt="Pfarrkirche Westenholz um ">
+									<img src="img/Minislider/Historie/historie_2.jpg" alt="Luftaufnahme Dorfzentrum 2014">
+									<img src="img/Minislider/Historie/historie_3.jpg" alt="Luftaufnahme Kirche 2014">
+									<img src="img/Minislider/Historie/historie_4.jpg" alt="">
+                                  <img src="img/Minislider/Historie/historie_5.jpg" alt="Luftaufnahme Dorfplatz 2014">
+
+							  </div>
 							</div>
 						</div>
 					</div>

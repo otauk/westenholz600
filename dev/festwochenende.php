@@ -44,7 +44,7 @@
 							<ul>
 								<li>Festansprachen der Ehrengäste</li>
 								<li>Präsentation des Jubiläumsbuches „Westenholz im Wandel der Zeit“</li>
-								<li>Auftritte von Westenholzer Vereinen</li>
+								<li>Auftritte Westenholzer Sänger, Gruppen &amp; Bands</li>
 							</ul>
 							</div>
 							<div class="col-1_4">
@@ -60,7 +60,7 @@
 							</div>
 							<div class="col-2_4">
 							<h2>Auftaktparty mit Tanz</h2>
-							Veranstaltungsort: Open-Air-Bühne
+							Veranstaltungsort: Open-Air-Bühne
 							</div>
 							<div class="col-1_4">
 
@@ -86,14 +86,15 @@
 							<div class="col-2_4">
 							<h2>Start des 11. Westenholzer Abendlaufes</h2>
 							Veranstaltungsort:
+							Start: Dorfmitte - Ziel: Sport- und Begegnungszentrum<br />
 							weitere Infos zum Lauf finden Sie <a href="#"> hier</a>
 							<h2>Mittelalter- Bauern- und Handwerkermarkt</h2>
-							Veranstaltungsort:
+							Veranstaltungsort: Schwester-Bonavita-Platz und Westenholzer Straße
 							<h2>Flohmarkt</h2>
-							Veranstaltungsort:
+							Veranstaltungsort: Rund um die Kirche
 							<h2>Kirmes</h2>
 							Veranstaltungsort:
-							</div>
+							Dorfmitte</div>
 							<div class="col-1_4">
 							<img src="img/festWe/abendlauf_westenholz.jpg" alt="abendlauf_westenholz" width="270" height="270" />
 							</div>
@@ -108,7 +109,7 @@
 							<div class="col-2_4">
 							<h2>Westenholzer Open Air Dorffestival
 mit Pop Weltstar DJ Ötzi</h2>
-							Veranstaltungsort: Open-Air-Bühne
+							Veranstaltungsort: Open-Air-Bühne
 							</div>
 							<div class="col-1_4">
 							<img src="img/festWe/dj_oetzi.jpg" alt="dj_oetzi" width="270" height="270" />
@@ -133,7 +134,7 @@ mit Pop Weltstar DJ Ötzi</h2>
 							</div>
 							<div class="col-2_4">
 							<h2>Festhochamt</h2>
-							Veranstaltungsort: Open-Air-Bühne
+							Veranstaltungsort: Dorfmitte
 							</div>
 							<div class="col-1_4">
 							</div>
@@ -146,15 +147,14 @@ mit Pop Weltstar DJ Ötzi</h2>
 								</div>
 							</div>
 							<div class="col-2_4">
-							<h2>600 Jahre – 600 Stühle</h2>
+							<h2>600 Jahre – 600 Stühle</h2>
 							Veranstaltungsort: Westenholzer Strasse
-							<p>
+
+							<br />
 							Quer durch unser Dorf, entlang der Westenholzer Strasse, werden Tische und
-							Stühle aufgebaut um gemeinsam zu brunchen.
-							</p>
-							<ul>
-								<li>mehr Informationen demnächst</li>
-								<li>Plätze jetzt schon online <a href="#">reservieren</a></li>
+							Stühle aufgebaut um gemeinsam zu brunchen.
+<ul>
+			  <li>mehr Informationen demnächst</li>
 							</ul>
 							</div>
 							<div class="col-1_4">
@@ -164,25 +164,25 @@ mit Pop Weltstar DJ Ötzi</h2>
 						<div class="row">
 							<div class="col-1_4">
 								<div class="time">
-									<div class="time label">ab 13.00 Uhr</div>
+									<div class="time label">ab 12.00 Uhr</div>
 									<div class="time active"></div>
 								</div>
 							</div>
 							<div class="col-2_4">
 							<h2>Bauern- und Handwerkermarkt</h2>
-							Veranstaltungsort:
+							Veranstaltungsort: Schwester-Bonavita-Platz und Westenholzer Straße
 							<h2>Kirmes</h2>
-							Veranstaltungsort:
+							Veranstaltungsort: Dorfmitte
 							<h2>Kinderparadies</h2>
 							Veranstaltungsort:
-							</div>
+							Dorfplatz</div>
 							<div class="col-1_4">
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-1_4">
 								<div class="time">
-									<div class="time label">ab 13.00 Uhr</div>
+									<div class="time label">ab 14.30 Uhr</div>
 									<div class="time active"></div>
 								</div>
 							</div>
@@ -190,10 +190,9 @@ mit Pop Weltstar DJ Ötzi</h2>
 							<h2>Parade und Ausstellung zum Thema „Mobilität im Wandel der Zeit“</h2>
 							Veranstaltungsort: Festgelände
 							<ul>
-								<li>Oldtimer-Autos,</li>
-								<li>Oldtimer-Traktoren und vieles mehr.</li>
-								<li>Präsentation von Königinnenkleidern</li>
-								<li>Live Musik auf dem Festgelände mit XXXXX</li>
+								<li>Oldtimer-Autos</li>
+								<li>Oldtimer-Traktoren und vieles mehr</li>
+								<li>Verlauf und Zugstrecke folgen demnächst</li>
 							</ul>
 							</div>
 							<div class="col-1_4">
@@ -203,14 +202,19 @@ mit Pop Weltstar DJ Ötzi</h2>
 						<div class="row">
 							<div class="col-1_4">
 								<div class="time">
-									<div class="time label">18.00 Uhr</div>
+									<div class="time label">16.30 Uhr</div>
 									<div class="time active"></div>
 								</div>
 							</div>
 							<div class="col-2_4">
-							<h2>Dämmerschoppen</h2>
+							<h2>Live-Programm</h2>
 							Veranstaltungsort: Dorfplatz
-							Gemütlicher Ausklang des Festwochenendes mit musikalischer Begleitung
+							<ul>
+								<li>Präsentation von Königinnenkleidern</li>
+								<li>Live Musik</li>
+								<li>und vieles mehr...</li>
+							</ul>
+							Gemütlicher Ausklang des Festwochenendes mit musikalischer Begleitung
 							</div>
 							<div class="col-1_4">
 							</div>
@@ -225,8 +229,8 @@ mit Pop Weltstar DJ Ötzi</h2>
 							<div class="col-4_4">
 								<a name="plan" class="anchor">&nbsp;</a>
 								<h1>Lageplan & Busfahrplan</h1>
-								<img src="img/headergrafiken/header_end.jpg" alt="header_end" width="1170" height="800" />
-								<table class="tbl">
+								<img src="img/headergrafiken/header_end.jpg" alt="header_end" width="1170" height="800" />Ein genauer Lageplan und Busabfahrtszeiten aus den benachbarten Gemeinden folgen demnächst an dieser Stelle
+								<!--<table class="tbl">
 									<tr>
 										<td>
 											<a href="#">
@@ -241,8 +245,7 @@ mit Pop Weltstar DJ Ötzi</h2>
 											</a>
 										</td>
 									</tr>
-								</table>
-							</div>
+								</table>-->.</div>
 						</div>
 					</div>
 				</div>
