@@ -62,7 +62,18 @@ Arbeits- und Ausbildungsplätze vor Ort.
 							<div class="btn active"></div>
 							</a>
 						</div>
+
 							</div>
+						</div>
+						<div class="row">
+							<div class="col-2_4">
+							<h2>Das Westenholzer Wappen</h2>
+							<p>
+Es zeigt auf einem dreigeteilten silbernen Schild in der Mitte das Siegel der St. Joseph-Pfarrgemeinde; im linken Feld den Hagedornbusch als Zeichen der Zugehörigkeit zu der Stadt Delbrück; im rechten Feld den Freien Stuhl als Zeichen einer alten Gerichtsstätte, die sich an der Stelle befindet, wo die drei Kreise Paderborn, Gütersloh und Soest zusammentreffen; im unteren Feld die drei durch Westenholz fließenden Gewässer (Boker Kanal, Grubebach, Haustenbach).
+								</p>
+							</div>
+							<div class="col-2_4 text-centered">
+<img src="img/wappen_westenholz.png" alt="wappen_westenholz" width="150" height="173" /></div>
 						</div>
 					</div>
 				</div>
@@ -97,10 +108,19 @@ Dorferleben in der Gemeinschaft erfahren! Machen Sie mit und bringen Sie sich im
 						<div class="col-2_4">
 							<h2>Warum das Logo so aussieht, wie es aussieht</h2>
 							<p>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Ziel des Logoentwicklung war es, das Motto in den Fokus zu rücken und all die postitiven Erlebnisse des Jubiläumsjahres, vom Anfang an unwiderruflich mit den Dorfnamen zu verweben.</br>
+Das Logo besteht aus drei Teilen, deren lockere Komposition die Offenherzigkeit des Dorfes und seiner Bewohner verbildlichen soll und zugleich als Einladung zu verstehen ist, sich aktiv am Dorfleben zu beteiligen “leben" oder passiv das Dorf als Gast zu "erleben". </br>
+Das Logo bedient sich zwei unterschiedlicher Schriftarten, die jede für sich genommen etwas anderes transportieren sollen, die Kernelemente eines guten Dorflebens.
+Der Name "Westenholz" ist in einer Antiqua gesetzt,  einer Schriftart, die zu den traditionellen Schriftfamilien gehört. Das besondere an der hier benutzten ist jedoch Ihre moderne Interpretation, die an den kleinen geschwungenen Serifen (1.) deutlich wird.
+Diese Balken geben der Schrift Halt und Stabilität, sinnbildlich eine gute Basis.</br>
+Der Claim  "Dorf erleben" hingegen soll die persönliche Seite des Dorfes symbolisieren (handgeschriebene Schrift). Hier wo jeder jeden kennt und man sich gegenseitig hilft.
+Eine versteckte Anspielung auf einen über die Dorfgrenzen hinweg bekannten Ausspruch "Westenholzer seien Kantenköppe" findet man bei genauem Hinsehen in dem "D" von Dorf. Der eigentlich runde Buchstabe ist hier eckig!(3)</br>
+Aber auch das dreigeteilte Element links oben spielt mit dieser Eigenschaft, die auf den ersten Blick rund erscheinende Form ist eckig. (2)
+Sie verweist auf die 600 vergangenen Jahre und mutet wie ein „W“ an.
+Die dadurch entstandene Dreiteilung nimmt Bezug auf die besondere geografische Lage des Dorfes.
+Westenholz, das Dorf an der Grenze der drei Kreise (Paderborn, Lippstadt, Gütersloh), der drei Regierungsbezirke (Detmold, Arnsberg, Münster) und der drei Wasserläufe (Haustenbach, Grubebach, Boker Kanal). Diese Tatsache wird ebenfalls im „Westenholzer Lied“ besungen und auch das Dorfwappen zeugt davon, indem es den Grenzstein des Freien Stuhls zeigt.</br>
+Das Rot, eine aktive Farbe, die schon seit jeher fester Bestandteil des Dorfes und der Dorfmotive ist kommt auch hier zum Einsatz.
+Im Jubiläumslogo wird das Rot noch von zwei weiteren Abstufungen begleitet. Zusammen formen sie einen harmonischen Farbdreiklang von dunkel nach hell. Stellvertretend für Vergangenheit Gegenwart und Zukunft...
 							</p>
 						</div>
 						<div class=""
@@ -120,7 +140,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 								<h1>Historie</h1>
 							</div>
 							<div class="col-2_4">
-Die erste urkundliche Erwähnung von Westenholz fand im Jahr 1415 statt. Außergewöhnliche Funde lassen allerdings auf eine steinzeitliche Besiedlung schließen. Von großer historischer Bedeutung kündet ein Stein, an dem die Grenzen der Kreise Paderborn, Soest und Gütersloh aufeinander treffen. Hier befand sich die alte Gerichtsstätte &quot;Freier Stuhl&quot;, wo bereits im Mittelalter Recht gesprochen wurde.
+Die erste urkundliche Erwähnung von Westenholz fand im Jahr 1415 statt. Außergewöhnliche Funde lassen allerdings auf eine bronzezeitliche Besiedlung schließen. Von großer historischer Bedeutung kündet ein Stein, an dem die Grenzen der Kreise Paderborn, Soest und Gütersloh aufeinander treffen. Hier befand sich die alte Gerichtsstätte &quot;Freier Stuhl&quot;, wo bereits im Mittelalter Recht gesprochen wurde.
 								<p>Mehr zur Geschichte von Westenholz erfahren Sie hier:</p>
 								<table class="tbl">
 								<tr>

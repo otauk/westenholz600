@@ -7,7 +7,7 @@
 						        <div class="col-1_4 footer_border">
 							        <h2>Allgemein</h2>
 							        <a href="das-dorf.php">Das Dorf</a><br/>
-									<a href="">Das Festjahr</a><br/>
+									<a href="festwochenende.php">Das Festjahr</a><br/>
 									<a href="buch.php">Das Buch</a><br/>
 									Arbeitsgruppen<br/>
 									<a href="media.php">Presse</a><br/>
@@ -42,6 +42,46 @@
 							        	</form>
 							        	<?php
 								        	if ($fehler == 0){
+// ##################### Mail-Versand #####################
+
+$absender = "kuato@gmx.de";
+$sender            = "Westenholz 600 - Dorf erleben";
+$sendermail        = "$absender";
+$subject         = "Ihre Mitteilung";
+$header = 'Content-type: text/html; charset=utf-8' . "\r\n";
+$header .= "From: $sender <$sendermail>\r\n";
+$header .= "BCC: $absender\r\n";
+$header .= "Reply-to: <$sendermail>\r\n";
+$header .= "Return-path: <$sendermail>\r\n";
+$text = "
+<p>
+Sehr geehrte/r Herr/Frau $name,
+</p>
+<p>
+vielen Dank für Ihre Mail.
+</p>
+<p>
+###########################
+</p>
+<p>
+Ihr Name: $name<br/>
+Ihre E-Mail: $mail
+</p>
+Ihr Kommentar <br/>
+$comment
+<p>
+###########################
+</p>
+<p>
+Mit freundlichen Grüßen
+</p>
+<p>
+Ihr Organisationskomitee von Westenholz 600 - Dorf <span style='color:red;'>er</span>leben
+</p>
+";
+
+mail($mail, $subject, $text, $header);
+
 									        	echo "
 									        	Vielen Dank für Ihre Mitteilung. <br/>Sie erhalten eine Kopie an '$mail'.
 									        	";
