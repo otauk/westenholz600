@@ -108,19 +108,19 @@ Dorferleben in der Gemeinschaft erfahren! Machen Sie mit und bringen Sie sich im
 						<div class="col-2_4">
 							<h2>Warum das Logo so aussieht, wie es aussieht</h2>
 							<p>
-Ziel des Logoentwicklung war es, das Motto in den Fokus zu rücken und all die postitiven Erlebnisse des Jubiläumsjahres, vom Anfang an unwiderruflich mit den Dorfnamen zu verweben.</br>
+Ziel des Logoentwicklung war es, das Motto in den Fokus zu rücken und all die postitiven Erlebnisse des Jubiläumsjahres, vom Anfang an unwiderruflich mit dem Dorfnamen zu verweben.</br>
 Das Logo besteht aus drei Teilen, deren lockere Komposition die Offenherzigkeit des Dorfes und seiner Bewohner verbildlichen soll und zugleich als Einladung zu verstehen ist, sich aktiv am Dorfleben zu beteiligen “leben" oder passiv das Dorf als Gast zu "erleben". </br>
-Das Logo bedient sich zwei unterschiedlicher Schriftarten, die jede für sich genommen etwas anderes transportieren sollen, die Kernelemente eines guten Dorflebens.
-Der Name "Westenholz" ist in einer Antiqua gesetzt,  einer Schriftart, die zu den traditionellen Schriftfamilien gehört. Das besondere an der hier benutzten ist jedoch Ihre moderne Interpretation, die an den kleinen geschwungenen Serifen (1.) deutlich wird.
+Das Logo bedient sich zwei unterschiedlicher Schriftarten, die jede für sich genommen etwas anderes transportieren soll.
+Der Name "Westenholz" ist in einer Antiqua gesetzt,  einer Schriftart, die zu den traditionellen Schriftfamilien gehört. Das Besondere an der hier benutzten ist jedoch ihre moderne Interpretation, die an den kleinen geschwungenen Serifen (1.) deutlich wird.
 Diese Balken geben der Schrift Halt und Stabilität, sinnbildlich eine gute Basis.</br>
-Der Claim  "Dorf erleben" hingegen soll die persönliche Seite des Dorfes symbolisieren (handgeschriebene Schrift). Hier wo jeder jeden kennt und man sich gegenseitig hilft.
-Eine versteckte Anspielung auf einen über die Dorfgrenzen hinweg bekannten Ausspruch "Westenholzer seien Kantenköppe" findet man bei genauem Hinsehen in dem "D" von Dorf. Der eigentlich runde Buchstabe ist hier eckig!(3)</br>
-Aber auch das dreigeteilte Element links oben spielt mit dieser Eigenschaft, die auf den ersten Blick rund erscheinende Form ist eckig. (2)
+Der Claim  "Dorf erleben" hingegen soll die persönliche Seite des Dorfes symbolisieren (handgeschriebene Schrift). Hier, wo jeder jeden kennt und man sich gegenseitig hilft.
+Eine versteckte Anspielung auf den über die Dorfgrenzen hinweg bekannten Ausspruch "Westenholzer seien Kantenköppe" findet man bei genauem Hinsehen in dem "D" von Dorf. Der eigentlich runde Buchstabe ist hier eckig!(3)</br>
+Aber auch das dreigeteilte Element links oben spielt mit dieser Eigenschaft Die auf den ersten Blick rund erscheinende Form ist eckig. (2)
 Sie verweist auf die 600 vergangenen Jahre und mutet wie ein „W“ an.
 Die dadurch entstandene Dreiteilung nimmt Bezug auf die besondere geografische Lage des Dorfes.
-Westenholz, das Dorf an der Grenze der drei Kreise (Paderborn, Lippstadt, Gütersloh), der drei Regierungsbezirke (Detmold, Arnsberg, Münster) und der drei Wasserläufe (Haustenbach, Grubebach, Boker Kanal). Diese Tatsache wird ebenfalls im „Westenholzer Lied“ besungen und auch das Dorfwappen zeugt davon, indem es den Grenzstein des Freien Stuhls zeigt.</br>
-Das Rot, eine aktive Farbe, die schon seit jeher fester Bestandteil des Dorfes und der Dorfmotive ist kommt auch hier zum Einsatz.
-Im Jubiläumslogo wird das Rot noch von zwei weiteren Abstufungen begleitet. Zusammen formen sie einen harmonischen Farbdreiklang von dunkel nach hell. Stellvertretend für Vergangenheit Gegenwart und Zukunft...
+Westenholz, das Dorf an der Grenze der drei Kreise (Paderborn, Soest, Gütersloh), der drei Regierungsbezirke (Detmold, Arnsberg, Münster) und der drei Wasserläufe (Haustenbach, Grubebach, Boker Kanal). Diese Tatsache wird ebenfalls im „Westenholzer Lied“ besungen und auch das Dorfwappen zeugt davon, indem es den Grenzstein des Freien Stuhls zeigt.</br>
+Das Rot, eine aktive Farbe, die schon seit jeher fester Bestandteil des Dorfes und der Dorfmotive ist, kommt auch hier zum Einsatz.
+Im Jubiläumslogo wird das Rot von zwei weiteren Abstufungen begleitet. Zusammen formen sie einen harmonischen Farbdreiklang von dunkel nach hell. Stellvertretend für Vergangenheit Gegenwart und Zukunft...
 							</p>
 						</div>
 						<div class=""
@@ -145,19 +145,19 @@ Die erste urkundliche Erwähnung von Westenholz fand im Jahr 1415 statt. Außerg
 								<table class="tbl">
 								<tr>
 									<td>
-										<a href="img/downloads/Historie_westenholz_1.pdf" target="_blank">&quot;damals und heute&quot; 26 (pdf-Datei)<br />
+										<a href="downloads/Historie_westenholz_1.pdf" target="_blank">&quot;damals und heute&quot; 26 (pdf-Datei)<br />
 										Die Gründung der Pfarrei Westenholz von 1715 bis 1728</a>
 									</td>
 								</tr>
 								<tr>
 									<td>
-										<a href="img/downloads/Historie_westenholz_2.pdf" target="_blank">&quot;damals und heute&quot; 30 (pdf-Datei)<br />
+										<a href="downloads/Historie_westenholz_2.pdf" target="_blank">&quot;damals und heute&quot; 30 (pdf-Datei)<br />
 										Westenholz im 14. und 15. Jahrhundert</a>
 									</td>
 								</tr>
 								<tr>
 									<td>
-										<a href="img/downloads/damals_und_heuteNr. 13.pdf" target="_blank">&quot;damals und heute&quot; 13 (pdf-Datei)<br />
+										<a href="downloads/damals_und_heuteNr. 13.pdf" target="_blank">&quot;damals und heute&quot; 13 (pdf-Datei)<br />
 Die alte Mühlenheider Schule </a>
 									</td>
 								</tr>
