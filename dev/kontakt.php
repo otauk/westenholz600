@@ -35,8 +35,7 @@
 							Telefon 02944 . 97 35 30<br/>
 							Telefax 02944 . 97 35 38<br/>
 							<br/>
-							E-Mail: info@westenholz600.de
-						</div>
+						E-Mail: <a href="mailto:dabei@westenholz600.de">dabei@westenholz600.de</a> </div>
 						<!--
 						<div class="col-2_4">
 							<h1>Arbeitsgruppen</h1>

@@ -35,18 +35,17 @@
 		und laden zum Verweilen ein. In den elf Schaukästen werden wechselnde
 		Themen aus Kunst, Kultur, Geschichte oder Natur aufgegriffen und auf Informationsplakaten
 		präsentiert. Zur Eröffnung wurden Werke von Peter August Böckstiegel
-		gezeigt, zurzeit präsentieren die Schaukästen Informationstafeln über heimische
+		gezeigt, zurzeit präsentieren die Schaukästen Informationstafeln über heimische
 		Bäume. Der Weg kann vom Ausgangspunkt auf dem Dorfplatz aus als Wandertour
-		in zwei unterschiedlichen, jeweils fünf Kilometer langen Rundgängen oder als Radtour
-		mit allen Stationen über 25 Kilometer genutzt werden. Auch im Jubiläumsjahr
+		in zwei unterschiedlichen, jeweils fünf Kilometer langen Rundgängen oder als Radtour
+		mit allen Stationen über 25 Kilometer genutzt werden. Auch im Jubiläumsjahr
 		soll ein besonderes Thema in den Schaukästen aushängen und Lust aufs Wandern
 		und Radfahren machen. Weiter Informationen erhalten Sie hier: (pdf-Datei vom
 		aktuellen Flyer)
 									</p>
 									<p>
-		Im Rahmen des 115. deutschen Wandertages, der vom 19. bis 21. Juli 2015 in Paderborn stattfinden wird, haben Besucher aus nah und fern die Möglichkeit einer
-		geführten Wanderung auf dem Westenholzer Kunst- und Themenweg.
-									</p>
+		Im Rahmen des 115. deutschen Wandertages, der vom 17. bis 22. Juni 2015 in Paderborn stattfinden wird, haben Besucher aus nah und fern die Möglichkeit einer
+		geführten Wanderung auf dem Westenholzer Kunst- und Themenweg.</p>
 							</div>
 						</div>
 					</div>
@@ -62,15 +61,15 @@
 								</tr>
 								<tr>
 									<td>
-										<a href="">
-											Imagebroschüre Deutscher Wandertag (PDF 2.0 MB)
+										<a href="downloads/imagebroschuere_wandertag.pdf" target="_blank">
+											Imagebroschüre Deutscher Wandertag (PDF 16.0 MB)
 										</a>
 									</td>
 								</tr>
 								<tr>
 									<td>
-										<a href="">
-											Programmheft Deutscher Wandertag (PDF 1.0 MB)
+										<a href="downloads/Wandertag-Webdatei.pdf" target="_blank">
+											Programmheft Deutscher Wandertag (PDF 7.7 MB)
 										</a>
 									</td>
 								</tr>
@@ -78,33 +77,33 @@
 							<img src="img/Minislider/Wandertag/deutscher_wandertag_2015.jpg" alt="deutscher_wandertag_2015" width="537" height="400" />
 							</div>
 							<div class="col-2_4">
-								<h2>Westenholzer Kunst- und Themenweg</h2>
+								<h2>Westenholzer Kunst- und Themenweg am 19.06.2015</h2>
 								<table>
 									<tr>
 										<td style="width:200px;">Länge:</td><td> 6 km</td>
 									</tr>
 									<tr>
-										<td>Startzeit/Treffpunkt:</td><td> 14.00 Uhr, 33129 Delbrück, Dorfplatz 1 (Gaststätte)</td>
+										<td>Startzeit/Treffpunkt:</td><td> 14.00 Uhr, 33129 Delbrück, Dorfplatz 1 (Gaststätte)</td>
 									</tr>
 									<tr>
 										<td>Rundwanderweg:</td><td>Pfarrkirche St. Joseph, Schweihoffs Kapelle,
 										Sudhoffs Speicher</td>
 									</tr>
 									<tr>
-										<td>Sehenswürdigkeiten:</td><td> Swin-Golf-Anlage</td>
+										<td>Sehenswürdigkeiten:</td><td> Swin-Golf-Anlage</td>
 									</tr>
 									<tr>
-										<td>Rückkehr:</td><td> ca. 16.00 Uhr</td>
+										<td>Rückkehr:</td><td> ca. 16.00 Uhr</td>
 									</tr>
 									<tr>
 										<td>Kosten, Anmeldung:</td><td> mit Wandertagsplakette kostenfrei,
 										Anmeldung nicht erforderlich</td>
 									</tr>
 									<tr>
-										<td>Veranstalter:</td><td> Volksbank Delbrück-Westenholz</td>
+										<td>Veranstalter:</td><td> Volksbank Delbrück-Westenholz</td>
 									</tr>
 									<tr>
-										<td>Wanderführer:</td><td> Franz-Josef Kesselmeier</td>
+										<td>Wanderführer:</td><td> Franz-Josef Kesselmeier</td>
 									</tr>
 									<tr>
 										<td>Verpflegung:</td><td> Rucksackverpflegung/
@@ -112,7 +111,7 @@
 									</tr>
 								</table>
 								<p>
-								Anmeldung direkt über die <a href="">Website des Wandertages</a>
+								Anmeldung direkt über die <a href="http://www.dwt-2015.de">Website des Wandertages</a>
 								</p>
 								<p>
 								Das Westenholzer Wanderangebot finden Sie im Programmheft auf Seite 120
@@ -129,16 +128,16 @@
 							<div class="col-4_4">
 								<h1>Weitere Veranstaltungen und Höhepunkt</h1>
 								<ul>
-									<li>Tagung der Kreisheimatpfleger (öffentlich/nicht öffentlich)</li>
-									<li>Heimatstube im Kolpinghaus Westenholz für Interessierte geöffnet</li>
-									<li>	Dorfentwicklungskonferenz des Kreises Paderborn (öffentlich)</li>
-									<li>Treffen der Delbrücker Heimatvereine</li>
-									<li>Tagung Geschichtsforum (öffentlich/nicht öffentlich)</li>
-									<li>Sportveranstaltungen …</li>
+									<li>Tagung der Kreisheimatpfleger</li>
+									<li>Heimatstube im Kolpinghaus Westenholz für Interessierte geöffnet</li>
+									<li>	Dorfentwicklungskonferenz des Kreises Paderborn </li>
+									<li>Treffen der Delbrücker Heimatvereine</li>
+									<li>Tagung Geschichtsforum</li>
+									<li>Sportveranstaltungen</li>
 									<li>Einweihung des Feuerwehrgerätehauses</li>
 									<li>Musikalische Konzerte</li>
 									<li>Aktivitäten der Schulen und Kindergärten</li>
-									<li>„Spiel ohne Grenzen“e 120</li>
+									<li>„Spiel ohne Grenzen“</li>
 								</ul>
 							</div>
 						</div>
