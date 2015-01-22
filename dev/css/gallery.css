@@ -1,0 +1,1 @@
+.gallery{text-align:center}.gallery ul{padding:0;margin:0;list-style-type:none;zoom:1;*display:inline}.gallery li{display:inline-block;position:relative;height:270px;border:10px solid #fff;margin:0 10px 10px 0}.gallery li:hover{box-shadow:1px 1px 5px #333}.gallery li:before{content:none}.gallery li a:hover{border:none;background:none}.gallery li a img{border:none}

@@ -5,12 +5,14 @@
 		<meta charset="utf-8">
 		<meta http-equiv="expires" content="0">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> 
+         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 		<!-- Font -->
 		<link type="text/css" rel="stylesheet" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css"  />
 		<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" >
 		<!-- Stylesheet -->
 		<link type="text/css" rel="stylesheet" href="css/custom-base.css"  />
+		<link href="css/jquery.lightbox.css" rel="stylesheet" type="text/css"/>
+
 		<!-- jScript -->
 		<script type="text/javascript" src="js/jquery-1.11.2.min.js" ></script>
 		<script type="text/javascript" src="js/TweenMax.min.js" ></script>
@@ -19,6 +21,13 @@
 		<script type="text/javascript" src="js/jquery.scrollmagic.min.js"></script>
 		<script type="text/javascript" src="js/animation.min.js"></script>
 		<script type="text/javascript" src="js/jquery.slides.min.js"></script>
+		<script type="text/javascript" src="js/jquery.lightbox.min.js" ></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				// ID der Galerie aufrufen und lightbox Funktion ausführen
+				$('.gallery a').lightBox();
+			});
+		</script>
 <?php
 	// Variablen einsammeln
 	$name = $_POST["name"];
