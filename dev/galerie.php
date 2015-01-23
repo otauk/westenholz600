@@ -4,7 +4,19 @@
         <a href="index.php"></a>
         <div class="sublogo"></div>
         <div class="col-4_4">
-            <div class="subnav buch"></div>
+            <div class="subnav buch">
+	            <a href="#dorf">
+							Das Dorf
+						</a>
+						<span class="subnav divider"></span>
+						<a href="#logo">
+							Jubiläumslogo
+						</a>
+						<span class="subnav divider"></span>
+						<a href="#historie">
+							Historie
+						</a>
+            </div>
         </div>
     </div>
     <div class="rinde">

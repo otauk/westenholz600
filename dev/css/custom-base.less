@@ -250,6 +250,12 @@ body {
 		position: fixed;
 	}
 
+@media all and (max-width: @breakpoint-small) {
+	.sublogo {
+		display: none;
+	}
+	}
+
 .picnav {
 	width:100%;
 	min-width: @breakpoint-medium;
@@ -322,16 +328,6 @@ body {
 *	%%%%%%%%%%%%%%%%%%%%
 */
 
-.navi {
-	position: fixed;
-	top:0;
-	width: 100%;
-	min-width: @breakpoint-medium;
-	max-width:(@inner-container) - (@space-base*2);
-	z-index: @index-9;
-	.font-base ();
-}
-
 .navi_container {
 	background-color: @color-base;
 	//opacity: 0.8;
@@ -344,11 +340,11 @@ body {
 	margin-bottom:0;
 	}
 
+
 .subnav {
 	position: relative;
-	//z-index: @index-3;
 	width: 100%;
-	min-width:@breakpoint-medium;
+	//min-width:@breakpoint-medium;
 	height: @subnav-height;
 	padding:  @subnav-height/3;
 	margin-top: -(@subnav-height/3);
@@ -374,9 +370,12 @@ body {
 	&.divider {
 		color: @color-0;
 		padding: 0 ;
+		&:before {
+			content:"|";
+		}
 	}
 	& a:link, & a:active, & a:visited {
-		display: inline;
+		display:inline;
 		position: relative;
 		padding: 40px;
 		color: @color-base;
@@ -391,6 +390,22 @@ body {
 			color: @color-c4;
 			text-decoration: none !important;
 		}
+	}
+}
+
+@media all and (max-width: @breakpoint-small) {
+	.subnav {
+		padding:  @subnav-height/6;
+		height: auto;
+		&.divider {
+			&:before {
+			content:"—";
+			}
+		}
+		& a:link, & a:active, & a:visited {
+			display: block;
+			padding:0;
+			}
 	}
 }
 
@@ -849,10 +864,6 @@ text-transform: uppercase;
 	}
 }
 
-.navi_border {
-	border-right: 1px solid @color-c5;
-}
-
 .footer_border {
 	border-right: 1px solid @color-c4;
 }
@@ -917,4 +928,55 @@ margin-top:5px;
 		transition: all 0.5s ease;
 		margin-top:-75px;
 	}
+}
+
+.mobile_nav_container {
+	height:auto;
+	background: rgba(255,255,255,0.6);
+	text-align: right;
+	padding: @space-base;
+	&:before {
+		.font-FA ();
+		content: "Navigation " @icon-button;
+	}
+}
+
+#mobile_nav {
+    float: left;
+    width: 100%;
+    padding: 0;
+    background: rgba(255,255,255,0.6);
+}
+#mobile_nav li {
+	display: block;
+	margin: 0;
+	padding: 0;
+	&:before {
+		content: none;
+	}
+}
+
+#mobile_nav ul {
+	padding: 0;
+}
+
+
+#mobile_nav li a {
+    display: block;
+    padding: @space-base;
+    border-bottom: 1px solid #999;
+    text-decoration: none;
+    color: #000;
+}
+#mobile_nav li a:hover, #mobile_nav li a.active {
+	background: #fff;
+    color: @color-c4;
+}
+#mobile_nav li ul {
+    display: none; // used to hide sub-menus
+}
+#mobile_nav li ul li a {
+    padding: 10px 25px;
+    background: #ececec;
+    border-bottom: 1px dotted #ccc;
 }
