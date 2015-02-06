@@ -4,9 +4,14 @@
 							<div class="navi">
 								<ul class="nav clean">
 									<li><a href="kontakt.php">Kontakt</a></li>
-									<li class="navi_border"><a href="media.php">Media</a></li>
+									<li class="dropdown navi_border"><a>Media</a>
+										<ul>
+											<li><a href="media.php#bildergalerie">Bildergalerie</a></li>
+											<li><a href="media.php#pressearchiv">Pressearchiv</a></li>
+										</ul>
+									</li>
 									<li class="navi_border"><a href="buch.php">Das Buch</a></li>
-									<li class="dropdown navi_border"> <a href="">Festjahr</a>
+									<li class="dropdown navi_border"> <a>Festjahr</a>
 										<ul>
 											<li class="dropdown"> <a href="festwochenende.php">Festwochenende</a>
 												<ul>

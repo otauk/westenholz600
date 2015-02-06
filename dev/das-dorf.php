@@ -9,11 +9,11 @@
 						<a href="#dorf">
 							Das Dorf
 						</a>
-						<span class="subnav divider">|</span>
+						<span class="subnav divider"></span>
 						<a href="#logo">
 							Jubiläumslogo
 						</a>
-						<span class="subnav divider">|</span>
+						<span class="subnav divider"></span>
 						<a href="#historie">
 							Historie
 						</a>

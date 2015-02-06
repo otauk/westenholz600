@@ -12,7 +12,40 @@
 			<div class="content">
 				<div class="container">
 					<div class="row">
+						<div class="col-4_4">
+							<a name="bildergalerie" class="anchor">&nbsp;</a>
+							<h1>Bildergalerie Auftakt</h1>
+						</div>
+					</div>
+	            <div class="row">
+	            	<div class="col-4_4">
+		            	<div class="gallery">
+							<ul><?php
+								include("inc/gallery_auftakt.php");?></ul>
+						</div>
+	            	</div>
+				</div>
+				<div class="row">
+						<div class="col-4_4">
+							<a name="bildergalerie" class="anchor">&nbsp;</a>
+							<h1>Bildergalerie Gewerbeschau</h1>
+						</div>
+					</div>
+	            <div class="row">
+	            	<div class="col-4_4">
+		            	<div class="gallery">
+							<ul><?php
+								$ordner = "img/bildergalerie/gewerbeschau";
+								include("inc/gallery_gewerbeschau.php");?></ul>
+						</div>
+	            	</div>
+				</div>
+            </div>
+            <div class="divider_1"></div>
+				<div class="container">
+					<div class="row">
 					  <div class="col-2_4 ">
+						  <a name="pressearchiv" class="anchor">&nbsp;</a>
 						<h1>Media</h1>
 						  Hier finden Sie alle Presseartikel rund um das Thema  „Westenholz 600“, die schon erschienen sind. Weiterhin können in dieser Rubrik auch das Logo und weitere Pressemeldungen für die Medienvertreter heruntergeladen werden.
 						</div>

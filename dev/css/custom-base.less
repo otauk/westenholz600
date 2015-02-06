@@ -240,6 +240,13 @@ body {
 	top:125px;
 }
 
+@media all and (max-width: @breakpoint-small) {
+	.logo {
+		display: none;
+	}
+}
+
+
 .sublogo {
 	width: 180px;
 	height: 100px;
@@ -396,7 +403,7 @@ body {
 @media all and (max-width: @breakpoint-small) {
 	.subnav {
 		padding:  @subnav-height/6;
-		height: auto;
+		min-height: auto;
 		&.divider {
 			&:before {
 			content:"—";

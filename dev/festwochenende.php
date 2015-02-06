@@ -9,15 +9,15 @@
 						<a href="#freitag">
 							Freitag
 						</a>
-						<span class="subnav divider">|</span>
+						<span class="subnav divider"></span>
 						<a href="#samstag">
 							Samstag
 						</a>
-						<span class="subnav divider">|</span>
+						<span class="subnav divider"></span>
 						<a href="#sonntag">
 							Sonntag
 						</a>
-						<span class="subnav divider">|</span>
+						<span class="subnav divider"></span>
 						<a href="#plan">
 							Lageplan & Busfahrplan
 						</a>

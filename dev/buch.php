@@ -1,8 +1,9 @@
 <?php include("header.php");?>
     <div class="header sub buch"></div>
     <div class="content">
-        <a href="index.php"></a>
-        <div class="sublogo"></div>
+        <a href="index.php">
+      	  <div class="sublogo"></div>
+        </a>
         <div class="col-4_4">
             <div class="subnav buch"></div>
         </div>

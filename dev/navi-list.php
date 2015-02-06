@@ -16,8 +16,13 @@
                 <li><a href="projekte.php">Projekte</a></li>            </ul>
         </li>
 
-        <li style="list-style: none"><a href="buch.php">Das Buch</a></li>
-        <li><a href="media.php">Media</a></li>
+        <li><a href="buch.php">Das Buch</a></li>
+        <li><a href="#">Media</a>
+        	<ul>
+	        	<li><a href="media.php#bildergalerie">Bildergalerie</a></li>
+	        	<li><a href="media.php#pressearchiv">Pressearchiv</a></li>
+        	</ul>
+	     </li>
 
 
 

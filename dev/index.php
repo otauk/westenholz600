@@ -152,9 +152,7 @@ Arbeits- und Ausbildungsplätze vor Ort.
 								<h1>Das Buch</h1>
 							</div>
 							<div class="col-2_4">
-								<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Some text in a paragraph
-								</p>
+ <p>Kurzweilig, interessant und natürlich informativ wird sich das Jubiläums-Westenholz-Buch unter dem Motto &quot;Westenholz im Wandel der Zeit&quot; präsentieren. Vorgestellt und erstmalig zum Verkauf angeboten wird es am 28.08. während der Eröffnung des Festwochenendes. Vorbestellungen werden ab sofort entegegen genommen .</p>
 							</div>
 							<div class="col-2_4">
 								<a href="buch.php">
