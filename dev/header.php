@@ -22,10 +22,14 @@
 		<script type="text/javascript" src="js/jquery.lightbox.min.js" ></script>
 		<script>
 		var url = "js/animation.js";
+		var url_mobile = "js/animation_mobile.js";
 		if (window.matchMedia("(min-width:768px)").matches) {
 			$.getScript(url);
 			document.cookie = 'navkind=1; path=/';
-		} else {document.cookie = 'navkind=0; path=/';}
+		} else {
+			$.getScript(url_mobile);
+			document.cookie = 'navkind=0; path=/';
+			}
 		</script>
 		<script type="text/javascript">
 			$(document).ready(function() {

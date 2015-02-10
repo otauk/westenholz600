@@ -53,7 +53,7 @@
 
 }
 .font-base () {
-	font-family: 'callunaregular', sans-serif;
+	font-family: 'callunaregular', serif;
 	font-weight: normal;
 	font-style: normal;
 	}
@@ -193,6 +193,9 @@ body {
 	height: 1080px;
 	&.index {
 	background: url("../img/headergrafiken/header_end_2.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
 	}
 	&.gewerbeschau {
 	background: url("../img/headergrafiken/gewerbeschau_westenholz_600jahre.jpg");
@@ -231,6 +234,7 @@ body {
 		}
 	}
 }
+
 
 .logo {
 	width: 520px;
@@ -274,7 +278,7 @@ body {
 .placer {
 	height: 360px;
 	width: 100%;
-	margin-top: -60px;
+	margin-top: -240px;
 }
 
 .rinde {
@@ -403,6 +407,7 @@ body {
 @media all and (max-width: @breakpoint-small) {
 	.subnav {
 		padding:  @subnav-height/6;
+		height:auto;
 		min-height: auto;
 		&.divider {
 			&:before {
@@ -474,6 +479,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
 	font-size: @fs-h1;
 	color:@color-c4;
+	line-height: @fs-h1;
 	//margin-top:@space-large*2;
 	}
 h2 {
@@ -814,7 +820,7 @@ input, textarea {
 }
 
 .picnav_bottom {
-position: absolute;
+//position: absolute;
 margin-top:260px;
 width: 270px;
 height: 180px;
@@ -938,6 +944,7 @@ margin-top:5px;
 }
 
 .mobile_nav_container {
+	.font-base ();
 	height:auto;
 	background: rgba(255,255,255,0.6);
 	text-align: right;

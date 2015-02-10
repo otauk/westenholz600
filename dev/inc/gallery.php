@@ -6,7 +6,7 @@ $thumbHeight = "250";
 // ZoomCrop ja(1) oder nein (0)?
 $thumbCrop = "1";
 // Ordner mit images
-// $ordner = "img/bildergalerie/auftakt"; -> Wird im include bestimmt bei Mehrfachaufruf!
+$ordner = "img/buch";
 // Ordner für Vorschau auslesen
 $allebilder = scandir($ordner);
 foreach ($allebilder as $bild) {
