@@ -79,7 +79,7 @@
 							</div>
 							<div class="col-1_4">
 								<div class="time">
-									<div class="time label">14.00 Uhr</div>
+									<div class="time label">13.30 Uhr</div>
 									<div class="time active"></div>
 								</div>
 							</div>
